@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "47cf1b5fdd9da524730d250c01088701"
+build_time: [1556640482, 728432000]
+inputs:
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/gameViewController.swift": [1556640482, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift": [1556553662, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/Puzzle.swift": [1556640025, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/AppDelegate.swift": [1556552867, 0]

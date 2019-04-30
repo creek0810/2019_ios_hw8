@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		57020B1E2277542300FDC893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B1D2277542300FDC893 /* AppDelegate.swift */; };
-		57020B202277542300FDC893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B1F2277542300FDC893 /* ViewController.swift */; };
 		57020B232277542300FDC893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57020B212277542300FDC893 /* Main.storyboard */; };
 		57020B252277542400FDC893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57020B242277542400FDC893 /* Assets.xcassets */; };
 		57020B282277542400FDC893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57020B262277542400FDC893 /* LaunchScreen.storyboard */; };
 		57020B332277542400FDC893 /* _019_ios_hw8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B322277542400FDC893 /* _019_ios_hw8Tests.swift */; };
 		57020B3E2277542400FDC893 /* _019_ios_hw8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B3D2277542400FDC893 /* _019_ios_hw8UITests.swift */; };
+		57020B4C2277552800FDC893 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B4B2277552800FDC893 /* Puzzle.swift */; };
+		57020B4F2277573F00FDC893 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B4E2277573F00FDC893 /* NetworkController.swift */; };
+		57020B51227757A900FDC893 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57020B50227757A900FDC893 /* gameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		57020B1A2277542300FDC893 /* 2019_ios_hw8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019_ios_hw8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57020B1D2277542300FDC893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57020B1F2277542300FDC893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57020B222277542300FDC893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57020B242277542400FDC893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57020B272277542400FDC893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		57020B392277542400FDC893 /* 2019_ios_hw8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2019_ios_hw8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57020B3D2277542400FDC893 /* _019_ios_hw8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _019_ios_hw8UITests.swift; sourceTree = "<group>"; };
 		57020B3F2277542400FDC893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57020B4B2277552800FDC893 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		57020B4E2277573F00FDC893 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		57020B50227757A900FDC893 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		57020B1C2277542300FDC893 /* 2019_ios_hw8 */ = {
 			isa = PBXGroup;
 			children = (
+				57020B53227757E900FDC893 /* Controller */,
+				57020B52227757BC00FDC893 /* View */,
+				57020B4D2277553A00FDC893 /* Model */,
 				57020B1D2277542300FDC893 /* AppDelegate.swift */,
-				57020B1F2277542300FDC893 /* ViewController.swift */,
 				57020B212277542300FDC893 /* Main.storyboard */,
 				57020B242277542400FDC893 /* Assets.xcassets */,
 				57020B262277542400FDC893 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				57020B3F2277542400FDC893 /* Info.plist */,
 			);
 			path = 2019_ios_hw8UITests;
+			sourceTree = "<group>";
+		};
+		57020B4D2277553A00FDC893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57020B4B2277552800FDC893 /* Puzzle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57020B52227757BC00FDC893 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57020B50227757A900FDC893 /* gameViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57020B53227757E900FDC893 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57020B4E2277573F00FDC893 /* NetworkController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57020B202277542300FDC893 /* ViewController.swift in Sources */,
+				57020B51227757A900FDC893 /* gameViewController.swift in Sources */,
+				57020B4F2277573F00FDC893 /* NetworkController.swift in Sources */,
+				57020B4C2277552800FDC893 /* Puzzle.swift in Sources */,
 				57020B1E2277542300FDC893 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
