@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,11 +100,27 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv4-Bi-ROv">
+                                <rect key="frame" x="63" y="496" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKG-FA-Rna">
+                                <rect key="frame" x="171" y="576" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="gameStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBG-GH-l3W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="timeLabel" destination="yv4-Bi-ROv" id="zAt-Te-TrJ"/>
                         <outletCollection property="puzzleImage" destination="XcN-dE-aQB" collectionClass="NSMutableArray" id="Eyp-A8-mfF"/>
                         <outletCollection property="puzzleImage" destination="MwX-X0-hSt" collectionClass="NSMutableArray" id="vUj-vy-N1f"/>
                         <outletCollection property="puzzleImage" destination="2Pz-pP-hZN" collectionClass="NSMutableArray" id="fGp-PH-Vm4"/>
@@ -116,8 +132,8 @@
                         <outletCollection property="puzzleImage" destination="J3X-La-HDQ" collectionClass="NSMutableArray" id="CnG-ya-jNe"/>
                         <outletCollection property="btnCollection" destination="6Kx-9P-HZc" collectionClass="NSMutableArray" id="Ss1-Kl-y18"/>
                         <outletCollection property="btnCollection" destination="aOM-y2-bX2" collectionClass="NSMutableArray" id="68H-dO-WIU"/>
-                        <outletCollection property="btnCollection" destination="Zur-wM-hjb" collectionClass="NSMutableArray" id="yqo-bl-wwu"/>
                         <outletCollection property="btnCollection" destination="TyH-c5-FOS" collectionClass="NSMutableArray" id="3zm-wA-LW0"/>
+                        <outletCollection property="btnCollection" destination="Zur-wM-hjb" collectionClass="NSMutableArray" id="DPm-uz-zxC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

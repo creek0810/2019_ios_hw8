@@ -10,7 +10,10 @@ import UIKit
 
 class gameViewController: UIViewController {
     var puzzle: Puzzle?
+    var timer: Timer?
+    var count: Int = 0
     
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet var btnCollection: [UIButton]!
     @IBOutlet var puzzleImage: [UIImageView]!
     
@@ -24,9 +27,10 @@ class gameViewController: UIViewController {
                 break
             }
         }
-        if let result = result {
+        if let result = result, let timer = timer {
             if result {
                 print("finish")
+                timer.invalidate()
             }else{
                 let tmp = puzzle?.updateBtn()
                 disablBtn(list: tmp!)
@@ -34,9 +38,21 @@ class gameViewController: UIViewController {
         }
     }
     
-    
+    @IBAction func gameStart(_ sender: Any) {
+        disablBtn(list: [Int]())
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+            self.count += 1
+            let secInt = Int(self.count)%60
+            
+            let minsInt = Int(self.count/60)%60
+            let hourInt = Int(self.count/3600)%24
+            self.timeLabel.text = "\(hourInt):\(minsInt):\(secInt)"
+            
+        }
+    }
     
     func disablBtn(list: [Int]) {
+        print(list)
         for i in btnCollection {
             i.isEnabled = true
         }
@@ -57,12 +73,12 @@ class gameViewController: UIViewController {
                         continue
                     }
                     puzzleImage[count].image = UIImage(named: "\(j+1)")
-                    
                 }
             }
         }
         
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var image: [UIImage] = [UIImage]();
@@ -72,6 +88,7 @@ class gameViewController: UIViewController {
                 image.append(tmp)
             }
         }
+        
         puzzle = Puzzle(image: image, name: "hello")
         let seq = puzzle?.shuffle()
         if let seq = seq {
