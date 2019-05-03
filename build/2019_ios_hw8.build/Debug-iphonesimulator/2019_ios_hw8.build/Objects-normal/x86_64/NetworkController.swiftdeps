@@ -1,11 +1,228 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "NetworkController"
 provides-nominal:
+- "12_019_ios_hw817NetworkControllerV"
+- "12_019_ios_hw817NetworkControllerV3APIV"
 provides-member:
+- ["12_019_ios_hw817NetworkControllerV", ""]
+- ["12_019_ios_hw817NetworkControllerV3APIV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "JSONDecoder"
+- !private "JSONEncoder"
+- "NetworkController"
+- "String"
+- "StringLiteralType"
+- !private "URL"
+- !private "URLRequest"
+- !private "URLSession"
+- "Void"
+- !private "print"
+- "record"
 depends-member:
+- ["12_019_ios_hw817NetworkControllerV3APIV", "getScore"]
+- ["12_019_ios_hw817NetworkControllerV3APIV", "init"]
+- ["12_019_ios_hw817NetworkControllerV3APIV", "postScore"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["s7CVarArgP", "dataTask"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "shared"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "addValue"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "httpBody"]
+- !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "addValue"]
+- !private ["s17CustomReflectableP", "httpBody"]
+- !private ["s17CustomReflectableP", "httpMethod"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "addValue"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "httpBody"]
+- !private ["s23CustomStringConvertibleP", "httpMethod"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "name"]
+- !private ["Se", "score"]
+- !private ["Se", "time"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "name"]
+- !private ["SE", "score"]
+- !private ["SE", "time"]
+- !private ["SQ", "addValue"]
+- !private ["SQ", "dataTask"]
+- !private ["SQ", "httpBody"]
+- !private ["SQ", "httpMethod"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "resume"]
+- !private ["SQ", "shared"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "addValue"]
+- !private ["SH", "dataTask"]
+- !private ["SH", "httpBody"]
+- !private ["SH", "httpMethod"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "resume"]
+- !private ["SH", "shared"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["10Foundation11JSONEncoderC", "encode"]
+- !private ["10Foundation11JSONEncoderC", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "shared"]
+- ["12_019_ios_hw817NetworkControllerV", "API"]
+- !private ["12_019_ios_hw817NetworkControllerV", "JSONDecoder"]
+- !private ["12_019_ios_hw817NetworkControllerV", "JSONEncoder"]
+- ["12_019_ios_hw817NetworkControllerV", "NetworkController"]
+- ["12_019_ios_hw817NetworkControllerV", "String"]
+- !private ["12_019_ios_hw817NetworkControllerV", "URL"]
+- !private ["12_019_ios_hw817NetworkControllerV", "URLRequest"]
+- !private ["12_019_ios_hw817NetworkControllerV", "URLSession"]
+- ["12_019_ios_hw817NetworkControllerV", "Void"]
+- ["12_019_ios_hw817NetworkControllerV", "getScore"]
+- ["12_019_ios_hw817NetworkControllerV", "init"]
+- ["12_019_ios_hw817NetworkControllerV", "postScore"]
+- !private ["12_019_ios_hw817NetworkControllerV", "print"]
+- ["12_019_ios_hw817NetworkControllerV", "record"]
+- ["12_019_ios_hw817NetworkControllerV", "shared"]
+- !private ["So19NSProgressReportingP", "resume"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "addValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["ST", "init"]
+- ["ST", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["10Foundation10URLRequestV", "addValue"]
+- !private ["10Foundation10URLRequestV", "httpBody"]
+- !private ["10Foundation10URLRequestV", "httpMethod"]
+- !private ["10Foundation10URLRequestV", "init"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- !private ["So12NSURLSessionC", "shared"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["s21_ObjectiveCBridgeableP", "addValue"]
+- !private ["s21_ObjectiveCBridgeableP", "httpBody"]
+- !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["12_019_ios_hw86recordV", "deinit"]
+- !private ["12_019_ios_hw86recordV", "name"]
+- !private ["12_019_ios_hw86recordV", "score"]
+- !private ["12_019_ios_hw86recordV", "time"]
 depends-nominal:
+- "12_019_ios_hw817NetworkControllerV3APIV"
+- "SK"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "10Foundation11JSONDecoderC"
+- !private "10Foundation11JSONEncoderC"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- "12_019_ios_hw817NetworkControllerV"
+- !private "So19NSProgressReportingP"
+- "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- "ST"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "10Foundation3URLV"
+- !private "10Foundation10URLRequestV"
+- !private "So12NSURLSessionC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+- !private "12_019_ios_hw86recordV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -32,4 +249,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "041a729df1aff91bdd7d86d70f450de5"

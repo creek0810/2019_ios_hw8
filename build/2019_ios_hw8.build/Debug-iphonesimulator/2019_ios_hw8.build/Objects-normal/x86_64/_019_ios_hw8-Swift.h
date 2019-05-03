@@ -163,6 +163,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
+@import Foundation;
 @import UIKit;
 #endif
 
@@ -196,17 +197,37 @@ SWIFT_CLASS("_TtC12_019_ios_hw811AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
-@class UIImageView;
+@class UITableView;
+@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC12_019_ios_hw824ScoreBoardViewController")
+@interface ScoreBoardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified scoreBoardTable;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UIImageView;
+@class UILabel;
+@class UIStoryboardSegue;
+
 SWIFT_CLASS("_TtC12_019_ios_hw818gameViewController")
 @interface gameViewController : UIViewController
+- (IBAction)test:(id _Nonnull)sender;
+- (IBAction)createNotification:(id _Nonnull)sender;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified btnCollection;
 @property (nonatomic, copy) IBOutletCollection(UIImageView) NSArray<UIImageView *> * _Null_unspecified puzzleImage;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLabel;
 - (IBAction)btnPressed:(UIButton * _Nonnull)sender;
+- (IBAction)gameStart:(id _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
