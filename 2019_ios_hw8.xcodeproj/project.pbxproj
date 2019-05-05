@@ -20,6 +20,7 @@
 		57A5207E227C56B300428EB1 /* record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5207D227C56B300428EB1 /* record.swift */; };
 		57A52080227C5AE800428EB1 /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5207F227C5AE800428EB1 /* ScoreBoardViewController.swift */; };
 		57DE5F44227D24DA0025C49E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5F43227D24DA0025C49E /* MenuTableViewCell.swift */; };
+		57F886D6227F3A0600828925 /* ShareWallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F886D5227F3A0600828925 /* ShareWallpaperViewController.swift */; };
 		57F9DC73227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F9DC72227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		57A5207D227C56B300428EB1 /* record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = record.swift; sourceTree = "<group>"; };
 		57A5207F227C5AE800428EB1 /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
 		57DE5F43227D24DA0025C49E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		57F886D5227F3A0600828925 /* ShareWallpaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareWallpaperViewController.swift; sourceTree = "<group>"; };
 		57F9DC72227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				57F9DC72227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift */,
 				57A5207F227C5AE800428EB1 /* ScoreBoardViewController.swift */,
 				57020B50227757A900FDC893 /* gameViewController.swift */,
+				57F886D5227F3A0600828925 /* ShareWallpaperViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				57020B51227757A900FDC893 /* gameViewController.swift in Sources */,
 				57020B4F2277573F00FDC893 /* NetworkController.swift in Sources */,
 				57DE5F44227D24DA0025C49E /* MenuTableViewCell.swift in Sources */,
+				57F886D6227F3A0600828925 /* ShareWallpaperViewController.swift in Sources */,
 				57020B4C2277552800FDC893 /* Puzzle.swift in Sources */,
 				57179155227D1F0800F6ED3F /* MenuViewController.swift in Sources */,
 				57020B1E2277542300FDC893 /* AppDelegate.swift in Sources */,

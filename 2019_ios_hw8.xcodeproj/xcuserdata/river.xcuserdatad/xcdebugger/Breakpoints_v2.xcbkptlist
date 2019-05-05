@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2019_ios_hw8/View/ScoreBoardViewController.swift"
-            timestampString = "578668243.9997261"
+            timestampString = "578763804.341423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "ScoreBoardViewController"
-            landmarkType = "3">
+            startingLineNumber = "136"
+            endingLineNumber = "136">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,7 +152,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2019_ios_hw8/View/MenuViewController.swift"
-            timestampString = "578667768.997912"
+            timestampString = "578761695.2353311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -170,7 +168,7 @@
                   moduleName = "2019_ios_hw8"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift"
-                  timestampString = "578655665.50152"
+                  timestampString = "578761695.3975019"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -185,7 +183,7 @@
                   moduleName = "2019_ios_hw8"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift"
-                  timestampString = "578655665.5038"
+                  timestampString = "578761695.399361"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -250,12 +248,12 @@
                   moduleName = "2019_ios_hw8"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift"
-                  timestampString = "578655665.518164"
+                  timestampString = "578761695.409206"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
                   endingLineNumber = "24"
-                  offsetFromSymbolStart = "1901">
+                  offsetFromSymbolStart = "2278">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -265,7 +263,7 @@
                   moduleName = "2019_ios_hw8"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift"
-                  timestampString = "578655665.52011"
+                  timestampString = "578761695.411062"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -282,13 +280,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2019_ios_hw8/View/ScoreBoardViewController.swift"
-            timestampString = "578668244.000953"
+            timestampString = "578763804.341916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "ScoreBoardViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

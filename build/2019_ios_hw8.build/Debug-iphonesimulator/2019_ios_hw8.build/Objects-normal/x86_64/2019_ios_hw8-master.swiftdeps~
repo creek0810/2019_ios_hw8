@@ -1,13 +1,14 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "47cf1b5fdd9da524730d250c01088701"
-build_time: [1556974800, 320904000]
+build_time: [1557070990, 415539000]
 inputs:
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/gameViewController.swift": [1556974641, 0]
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift": [1556965378, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/gameViewController.swift": !private [1557035398, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift": !dirty [1556965378, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuTableViewCell.swift": [1556934779, 0]
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/Puzzle.swift": [1556974800, 0]
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift": [1556950766, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ShareWallpaperViewController.swift": [1557070475, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/Puzzle.swift": !private [1557035438, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift": !private [1556950766, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/AppDelegate.swift": [1556898137, 0]
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ScoreBoardViewController.swift": [1556974078, 0]
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/record.swift": [1556961741, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ScoreBoardViewController.swift": !dirty [1557070380, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/record.swift": !dirty [1557070990, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ScoreBoardTableViewCell.swift": [1556964693, 0]

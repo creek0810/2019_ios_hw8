@@ -55,8 +55,6 @@ struct Puzzle {
     
     func updateBtn() -> [Int]{
         var canNotPressed: [Int] = [Int]()
-        print(whiteLoc)
-        print(table)
         if whiteLoc.row == 2 {
             canNotPressed.append(0)
         }

@@ -241,13 +241,24 @@ SWIFT_CLASS("_TtC12_019_ios_hw823ScoreBoardTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC12_019_ios_hw824ScoreBoardViewController")
 @interface ScoreBoardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified boardSwitch;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified scoreBoardTable;
-- (IBAction)shareScore:(id _Nonnull)sender;
+- (IBAction)boardChanged:(id _Nonnull)sender;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12_019_ios_hw828ShareWallpaperViewController")
+@interface ShareWallpaperViewController : UIViewController
+- (IBAction)shareScore:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -260,6 +271,7 @@ SWIFT_CLASS("_TtC12_019_ios_hw818gameViewController")
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified btnCollection;
 @property (nonatomic, copy) IBOutletCollection(UIImageView) NSArray<UIImageView *> * _Null_unspecified puzzleImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLabel;
+- (IBAction)returnMenu:(id _Nonnull)sender;
 - (IBAction)test:(id _Nonnull)sender;
 - (IBAction)createNotification:(id _Nonnull)sender;
 - (IBAction)btnPressed:(UIButton * _Nonnull)sender;

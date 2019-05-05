@@ -19,6 +19,9 @@ class gameViewController: UIViewController {
     @IBOutlet var puzzleImage: [UIImageView]!
     @IBOutlet var timeLabel: UILabel!
     
+    @IBAction func returnMenu(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func test(_ sender: Any) {
         getUserName()
     }
@@ -60,7 +63,6 @@ class gameViewController: UIViewController {
     
     @IBAction func gameStart(_ sender: Any) {
         let disableList = puzzle?.updateBtn()
-        print(disableList)
         disablBtn(list: disableList!)
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
             self.count += 1
@@ -125,7 +127,6 @@ class gameViewController: UIViewController {
                         continue
                     }
                     puzzleImage[count].image = puzzle!.image[j]
-                    print(j)
                 }
             }
         }

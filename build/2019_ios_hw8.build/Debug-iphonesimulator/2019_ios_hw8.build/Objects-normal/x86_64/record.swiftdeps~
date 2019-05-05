@@ -1,13 +1,16 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "record"
+- "=="
 provides-nominal:
 - "12_019_ios_hw86recordV"
 provides-member:
 - ["12_019_ios_hw86recordV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "&&"
 - "=="
+- "Bool"
 - "Codable"
 - !private "FloatLiteralType"
 - "Int"
@@ -62,6 +65,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["Se", ""]
 - !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "costTime"]
 - ["Se", "encode"]
 - ["Se", "init"]
 - !private ["Se", "init"]
@@ -71,6 +75,7 @@ depends-member:
 - !private ["s7DecoderP", "container"]
 - ["SE", ""]
 - !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "costTime"]
 - ["SE", "encode"]
 - ["SE", "init"]
 - !private ["SE", "init"]
@@ -143,12 +148,16 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
+- ["12_019_ios_hw86recordV", "=="]
+- ["12_019_ios_hw86recordV", "Bool"]
 - ["12_019_ios_hw86recordV", "Int"]
 - ["12_019_ios_hw86recordV", "String"]
+- ["12_019_ios_hw86recordV", "costTime"]
 - ["12_019_ios_hw86recordV", "deinit"]
 - ["12_019_ios_hw86recordV", "encode"]
 - ["12_019_ios_hw86recordV", "init"]
 - ["12_019_ios_hw86recordV", "name"]
+- ["12_019_ios_hw86recordV", "record"]
 - ["12_019_ios_hw86recordV", "score"]
 - ["12_019_ios_hw86recordV", "time"]
 depends-nominal:
@@ -221,4 +230,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "208e2694bfd5e203d81b0a0b7c6968bd"
+interface-hash: "acc89f77c3b848091cfd090f4618c824"

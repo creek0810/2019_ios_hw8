@@ -7,7 +7,6 @@ provides-member:
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
-- "backGround"
 - "costTime"
 - "rank"
 - "setSelected"
@@ -17,7 +16,6 @@ depends-top-level:
 - "ScoreBoardTableViewCell"
 - "UILabel"
 - "UITableViewCell"
-- "UIView"
 depends-member:
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
@@ -56,9 +54,7 @@ depends-member:
 - !private ["So8NSCodingP", "setSelected"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "UILabel"]
-- ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "awakeFromNib"]
-- ["So8NSObjectC", "backGround"]
 - ["So8NSObjectC", "costTime"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
@@ -72,9 +68,7 @@ depends-member:
 - !private ["So8NSObjectP", "setSelected"]
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", "Bool"]
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", "UILabel"]
-- ["12_019_ios_hw823ScoreBoardTableViewCellC", "UIView"]
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", "awakeFromNib"]
-- ["12_019_ios_hw823ScoreBoardTableViewCellC", "backGround"]
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", "costTime"]
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", "init"]
 - ["12_019_ios_hw823ScoreBoardTableViewCellC", "rank"]
@@ -132,9 +126,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "UILabel"]
-- ["So11UIResponderC", "UIView"]
 - ["So11UIResponderC", "awakeFromNib"]
-- ["So11UIResponderC", "backGround"]
 - ["So11UIResponderC", "costTime"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
@@ -148,10 +140,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - ["So15UITableViewCellC", "Bool"]
 - ["So15UITableViewCellC", "UILabel"]
-- ["So15UITableViewCellC", "UIView"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
-- ["So15UITableViewCellC", "backGround"]
 - ["So15UITableViewCellC", "costTime"]
 - ["So15UITableViewCellC", "init"]
 - !private ["So15UITableViewCellC", "init"]
@@ -170,9 +160,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "UILabel"]
-- ["So6UIViewC", "UIView"]
 - ["So6UIViewC", "awakeFromNib"]
-- ["So6UIViewC", "backGround"]
 - ["So6UIViewC", "costTime"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "init"]
@@ -245,4 +233,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b259d757118a0148c031d0190f8d8ad3"
+interface-hash: "6338789e700abd17c42c6b544079561c"

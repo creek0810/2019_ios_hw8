@@ -28,7 +28,6 @@ depends-top-level:
 - "String"
 - "UIImage"
 - "loc"
-- !private "print"
 - !private "||"
 depends-member:
 - !private ["Sa", "append"]
@@ -111,7 +110,6 @@ depends-member:
 - ["12_019_ios_hw86PuzzleV", "loc"]
 - ["12_019_ios_hw86PuzzleV", "move"]
 - ["12_019_ios_hw86PuzzleV", "name"]
-- !private ["12_019_ios_hw86PuzzleV", "print"]
 - ["12_019_ios_hw86PuzzleV", "shuffle"]
 - ["12_019_ios_hw86PuzzleV", "table"]
 - ["12_019_ios_hw86PuzzleV", "updateBtn"]

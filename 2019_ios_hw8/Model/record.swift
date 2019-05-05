@@ -13,4 +13,12 @@ struct record: Codable {
     let costTime: String?
     let time: String?
     let name: String?
+    
+    static func ==(left: record, right: record) -> Bool {
+        return
+            left.score == right.score &&
+            left.costTime == right.costTime &&
+            left.time == right.time &&
+            left.name == right.name 
+    }
 }
