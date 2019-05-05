@@ -62,6 +62,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["Se", ""]
 - !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "costTime"]
 - ["Se", "encode"]
 - ["Se", "init"]
 - !private ["Se", "init"]
@@ -71,6 +72,7 @@ depends-member:
 - !private ["s7DecoderP", "container"]
 - ["SE", ""]
 - !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "costTime"]
 - ["SE", "encode"]
 - ["SE", "init"]
 - !private ["SE", "init"]
@@ -145,6 +147,7 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "init"]
 - ["12_019_ios_hw86recordV", "Int"]
 - ["12_019_ios_hw86recordV", "String"]
+- ["12_019_ios_hw86recordV", "costTime"]
 - ["12_019_ios_hw86recordV", "deinit"]
 - ["12_019_ios_hw86recordV", "encode"]
 - ["12_019_ios_hw86recordV", "init"]
@@ -217,7 +220,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "208e2694bfd5e203d81b0a0b7c6968bd"
+interface-hash: "794832f8fb2a3ca36fe619b8bb124b4b"

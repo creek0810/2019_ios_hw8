@@ -59,7 +59,9 @@ class gameViewController: UIViewController {
     }
     
     @IBAction func gameStart(_ sender: Any) {
-        disablBtn(list: [Int]())
+        let disableList = puzzle?.updateBtn()
+        print(disableList)
+        disablBtn(list: disableList!)
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
             self.count += 1
             let secInt = String(format: "%02d", Int(self.count) % 60)
@@ -99,7 +101,6 @@ class gameViewController: UIViewController {
     func updateImage(list: [[Int]]?){
         if let list = list {
             var count = -1
-            print("update ")
             for i in list {
                 for j in i {
                     count += 1
@@ -113,32 +114,7 @@ class gameViewController: UIViewController {
         }
     }
     
-    func cutImage() -> [UIImage] {
-        var result: [UIImage] = [UIImage]()
-        let originalImage = UIImage(named: "test")
-        
-        let oriHeight = Double(originalImage!.size.height)
-        let oriWidth = Double(originalImage!.size.width)
-        let max = oriHeight > oriWidth ? oriWidth : oriHeight
-        let square = max / 3
-        
-        let oriCGImage = originalImage!.cgImage
-        if let image = oriCGImage {
-            for i in 0...2 {
-                for j in 0...2 {
-                    print("\(oriWidth - max + Double(j) * square)")
-                    let newCGImage = image.cropping(to: CGRect(x: (oriWidth - max) / 2 + Double(j) * square, y: (oriHeight - max) / 2 + Double(i) * square, width: square, height: square))
-                    let tmp = UIImage(cgImage: newCGImage!)
-                    result.append(tmp)
-                }
-            }
-        }
-        return result
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        puzzle = Puzzle(image: cutImage(), name: "hello")
+    func updateUI() {
         let seq = puzzle?.shuffle()
         if let seq = seq {
             var count = -1
@@ -149,11 +125,16 @@ class gameViewController: UIViewController {
                         continue
                     }
                     puzzleImage[count].image = puzzle!.image[j]
+                    print(j)
                 }
             }
         }
-        let tmp = puzzle?.updateBtn()
-        disablBtn(list: tmp!)
+        disablBtn(list: [0, 1, 2, 3])
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateUI()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -165,6 +146,6 @@ class gameViewController: UIViewController {
         let curTime: String = dateFormat.string(from: now)
         
         let controller = segue.destination as? ScoreBoardViewController
-        controller?.curRecord = record(score: self.count, time: curTime, name: userName)
+        controller?.curRecord = record(score: self.count, costTime: timeLabel.text, time: curTime, name: userName)
     }
 }

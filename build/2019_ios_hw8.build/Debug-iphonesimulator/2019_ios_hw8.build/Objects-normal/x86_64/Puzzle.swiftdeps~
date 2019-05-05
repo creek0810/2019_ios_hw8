@@ -28,6 +28,7 @@ depends-top-level:
 - "String"
 - "UIImage"
 - "loc"
+- !private "print"
 - !private "||"
 depends-member:
 - !private ["Sa", "append"]
@@ -110,6 +111,7 @@ depends-member:
 - ["12_019_ios_hw86PuzzleV", "loc"]
 - ["12_019_ios_hw86PuzzleV", "move"]
 - ["12_019_ios_hw86PuzzleV", "name"]
+- !private ["12_019_ios_hw86PuzzleV", "print"]
 - ["12_019_ios_hw86PuzzleV", "shuffle"]
 - ["12_019_ios_hw86PuzzleV", "table"]
 - ["12_019_ios_hw86PuzzleV", "updateBtn"]
@@ -200,6 +202,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"

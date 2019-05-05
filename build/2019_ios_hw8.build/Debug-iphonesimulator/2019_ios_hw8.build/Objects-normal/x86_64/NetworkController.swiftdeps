@@ -16,7 +16,6 @@ depends-top-level:
 - !private "JSONDecoder"
 - !private "JSONEncoder"
 - "NetworkController"
-- "String"
 - "StringLiteralType"
 - !private "URL"
 - !private "URLRequest"
@@ -28,18 +27,24 @@ depends-member:
 - ["12_019_ios_hw817NetworkControllerV3APIV", "getScore"]
 - ["12_019_ios_hw817NetworkControllerV3APIV", "init"]
 - ["12_019_ios_hw817NetworkControllerV3APIV", "postScore"]
+- !private ["SK", "addingPercentEncoding"]
 - ["SK", "init"]
 - ["SK", "init"]
+- !private ["s7CVarArgP", "addingPercentEncoding"]
 - !private ["s7CVarArgP", "dataTask"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
+- !private ["10Foundation12CharacterSetV", "urlQueryAllowed"]
+- !private ["Sl", "addingPercentEncoding"]
 - ["Sl", "init"]
 - ["Sl", "init"]
+- !private ["SL", "addingPercentEncoding"]
 - ["SL", "init"]
 - ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "addValue"]
+- !private ["s28CustomDebugStringConvertibleP", "addingPercentEncoding"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
 - !private ["s28CustomDebugStringConvertibleP", "httpBody"]
 - !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
@@ -47,14 +52,18 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "urlQueryAllowed"]
+- !private ["s29CustomPlaygroundQuickLookableP", "addingPercentEncoding"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "addValue"]
+- !private ["s17CustomReflectableP", "addingPercentEncoding"]
 - !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "addValue"]
+- !private ["s23CustomStringConvertibleP", "addingPercentEncoding"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
 - !private ["s23CustomStringConvertibleP", "httpBody"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
@@ -62,17 +71,25 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "urlQueryAllowed"]
+- !private ["Se", "addingPercentEncoding"]
+- !private ["Se", "costTime"]
 - ["Se", "init"]
 - ["Se", "init"]
 - !private ["Se", "name"]
 - !private ["Se", "score"]
 - !private ["Se", "time"]
+- !private ["Se", "urlQueryAllowed"]
+- !private ["SE", "addingPercentEncoding"]
+- !private ["SE", "costTime"]
 - ["SE", "init"]
 - ["SE", "init"]
 - !private ["SE", "name"]
 - !private ["SE", "score"]
 - !private ["SE", "time"]
+- !private ["SE", "urlQueryAllowed"]
 - !private ["SQ", "addValue"]
+- !private ["SQ", "addingPercentEncoding"]
 - !private ["SQ", "dataTask"]
 - !private ["SQ", "httpBody"]
 - !private ["SQ", "httpMethod"]
@@ -80,13 +97,19 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "shared"]
+- !private ["SQ", "urlQueryAllowed"]
+- !private ["s25ExpressibleByArrayLiteralP", "urlQueryAllowed"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "addingPercentEncoding"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "addingPercentEncoding"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "addValue"]
+- !private ["SH", "addingPercentEncoding"]
 - !private ["SH", "dataTask"]
 - !private ["SH", "httpBody"]
 - !private ["SH", "httpMethod"]
@@ -94,26 +117,37 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "resume"]
 - !private ["SH", "shared"]
+- !private ["SH", "urlQueryAllowed"]
 - !private ["10Foundation11JSONDecoderC", "decode"]
 - !private ["10Foundation11JSONDecoderC", "init"]
 - !private ["10Foundation11JSONEncoderC", "encode"]
 - !private ["10Foundation11JSONEncoderC", "init"]
+- !private ["s25LosslessStringConvertibleP", "addingPercentEncoding"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "addingPercentEncoding"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "addingPercentEncoding"]
+- !private ["So9NSCopyingP", "addingPercentEncoding"]
 - !private ["So9NSCopyingP", "resume"]
+- !private ["So21NSItemProviderReadingP", "addingPercentEncoding"]
+- !private ["So21NSItemProviderWritingP", "addingPercentEncoding"]
+- !private ["So16NSMutableCopyingP", "addingPercentEncoding"]
+- !private ["So8NSObjectC", "addingPercentEncoding"]
 - !private ["So8NSObjectC", "dataTask"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectP", "addingPercentEncoding"]
 - !private ["So8NSObjectP", "dataTask"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "shared"]
+- !private ["So14NSSecureCodingP", "addingPercentEncoding"]
+- !private ["So8NSStringC", "addingPercentEncoding"]
 - ["12_019_ios_hw817NetworkControllerV", "API"]
 - !private ["12_019_ios_hw817NetworkControllerV", "JSONDecoder"]
 - !private ["12_019_ios_hw817NetworkControllerV", "JSONEncoder"]
 - ["12_019_ios_hw817NetworkControllerV", "NetworkController"]
-- ["12_019_ios_hw817NetworkControllerV", "String"]
 - !private ["12_019_ios_hw817NetworkControllerV", "URL"]
 - !private ["12_019_ios_hw817NetworkControllerV", "URLRequest"]
 - !private ["12_019_ios_hw817NetworkControllerV", "URLSession"]
@@ -125,20 +159,28 @@ depends-member:
 - ["12_019_ios_hw817NetworkControllerV", "record"]
 - ["12_019_ios_hw817NetworkControllerV", "shared"]
 - !private ["So19NSProgressReportingP", "resume"]
+- !private ["Sm", "addingPercentEncoding"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "addValue"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "urlQueryAllowed"]
+- !private ["ST", "addingPercentEncoding"]
 - ["ST", "init"]
 - ["ST", "init"]
+- !private ["s10SetAlgebraP", "urlQueryAllowed"]
+- !private ["SS", "addingPercentEncoding"]
 - ["SS", "init"]
 - ["SS", "init"]
+- !private ["Sy", "addingPercentEncoding"]
 - ["Sy", "init"]
 - ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "addingPercentEncoding"]
 - ["s16TextOutputStreamP", "init"]
 - ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "addingPercentEncoding"]
 - ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["10Foundation3URLV", "init"]
@@ -150,27 +192,38 @@ depends-member:
 - !private ["So12NSURLSessionC", "shared"]
 - !private ["So20NSURLSessionDataTaskC", "resume"]
 - !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "addingPercentEncoding"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "addingPercentEncoding"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "addingPercentEncoding"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "addingPercentEncoding"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "addingPercentEncoding"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addingPercentEncoding"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["s21_ObjectiveCBridgeableP", "addValue"]
+- !private ["s21_ObjectiveCBridgeableP", "addingPercentEncoding"]
 - !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "urlQueryAllowed"]
+- !private ["s16_SwiftStringViewP", "addingPercentEncoding"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
+- !private ["12_019_ios_hw86recordV", "costTime"]
 - !private ["12_019_ios_hw86recordV", "deinit"]
 - !private ["12_019_ios_hw86recordV", "name"]
 - !private ["12_019_ios_hw86recordV", "score"]
@@ -179,6 +232,7 @@ depends-nominal:
 - "12_019_ios_hw817NetworkControllerV3APIV"
 - "SK"
 - "s7CVarArgP"
+- !private "10Foundation12CharacterSetV"
 - "Sl"
 - "SL"
 - "s28CustomDebugStringConvertibleP"
@@ -188,6 +242,7 @@ depends-nominal:
 - "Se"
 - "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
@@ -196,14 +251,21 @@ depends-nominal:
 - !private "10Foundation11JSONEncoderC"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "So8NSCodingP"
 - !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "12_019_ios_hw817NetworkControllerV"
 - !private "So19NSProgressReportingP"
 - "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
+- !private "s10SetAlgebraP"
 - "SS"
 - "Sy"
 - "s16TextOutputStreamP"
@@ -219,6 +281,7 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
@@ -246,7 +309,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "041a729df1aff91bdd7d86d70f450de5"
+interface-hash: "6a4ad09dcbde213e6695c851e4174c12"

@@ -10,6 +10,7 @@ import Foundation
 
 struct record: Codable {
     let score: Int?
+    let costTime: String?
     let time: String?
     let name: String?
 }
