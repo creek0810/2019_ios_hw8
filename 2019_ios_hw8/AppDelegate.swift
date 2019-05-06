@@ -10,7 +10,7 @@ import UIKit
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -24,8 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else {
                 print("使用者不同意")
             }
-            
         })
+        
+        UNUserNotificationCenter.current().delegate = self
+
         return true
     }
 
@@ -51,6 +53,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("在前景收到通知...")
+        completionHandler([.badge, .sound, .alert])
+    }
 
 }
 

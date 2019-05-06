@@ -22,27 +22,6 @@ class gameViewController: UIViewController {
     @IBAction func returnMenu(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    @IBAction func test(_ sender: Any) {
-        UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
-        let result = UserDefaults.standard.bool(forKey: puzzle?.name ?? "")
-        print(result)
-        
-        getUserName()
-    }
-
-    @IBAction func createNotification(_ sender: AnyObject) {
-        let content = UNMutableNotificationContent()
-        content.title = "體驗過了，才是你的。"
-        content.subtitle = "米花兒"
-        content.body = "不要追問為什麼，就笨拙地走入未知。感受眼前的怦然與顫抖，聽聽左邊的碎裂和跳動。不管好的壞的，只有體驗過了，才是你的。"
-        content.badge = 1
-        content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
-        let request = UNNotificationRequest(identifier: "notification1", content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-    }
-    
     
     @IBAction func btnPressed(_ sender: UIButton) {
         let dir = [[1, 0], [-1, 0], [0, 1], [0, -1]]
@@ -57,7 +36,16 @@ class gameViewController: UIViewController {
         if let isFinish = isFinish, let timer = timer {
             if isFinish {
                 timer.invalidate()
-                UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
+                
+                let defaultFinishPuzzle = [puzzle?.name ?? "": false]
+                UserDefaults.standard.register(defaults: defaultFinishPuzzle)
+                
+                let haveFinish = UserDefaults.standard.bool(forKey: puzzle?.name ?? "")
+                if haveFinish == false {
+                    print("new finish")
+                    sendNotification()
+                    UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
+                }
                 getUserName()
             }else{
                 let tmp = puzzle?.updateBtn()
@@ -76,6 +64,24 @@ class gameViewController: UIViewController {
             let hourInt = String(format: "%02d", Int(self.count / 3600) % 24)
             self.timeLabel.text = "\(hourInt):\(minsInt):\(secInt)"
         }
+    }
+    
+    func sendNotification() {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "解鎖桌布"
+        content.subtitle = "角落生物拼圖樂"
+        content.body = "恭喜你完成了\(puzzle?.name ?? "")拼圖挑戰，快試試在桌布頁面下載可愛的角落生物桌布吧"
+        content.badge = 1
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: {error in
+            print("成功建立通知...")
+        })
     }
     
     func getUserName() {

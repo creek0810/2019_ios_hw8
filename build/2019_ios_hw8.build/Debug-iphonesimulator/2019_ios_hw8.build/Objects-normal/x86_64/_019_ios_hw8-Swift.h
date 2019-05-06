@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import Foundation;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -184,9 +185,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class UIWindow;
 @class UIApplication;
+@class UNUserNotificationCenter;
+@class UNNotification;
 
 SWIFT_CLASS("_TtC12_019_ios_hw811AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
@@ -194,6 +197,7 @@ SWIFT_CLASS("_TtC12_019_ios_hw811AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -289,7 +293,6 @@ SWIFT_CLASS("_TtC12_019_ios_hw818gameViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLabel;
 - (IBAction)returnMenu:(id _Nonnull)sender;
 - (IBAction)test:(id _Nonnull)sender;
-- (IBAction)createNotification:(id _Nonnull)sender;
 - (IBAction)btnPressed:(UIButton * _Nonnull)sender;
 - (IBAction)gameStart:(id _Nonnull)sender;
 - (void)viewDidLoad;

@@ -94,7 +94,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         if selectedImageIndex == -1 {
             controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "personal")
         } else {
-            controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "default\(selectedImageIndex)")
+            print(selectedImageIndex)
+            controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "default \(selectedImageIndex)")
         }
         
     }

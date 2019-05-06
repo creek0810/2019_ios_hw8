@@ -12,10 +12,12 @@ provides-dynamic-lookup:
 - "applicationWillEnterForeground"
 - "applicationWillResignActive"
 - "applicationWillTerminate"
+- "userNotificationCenter"
 - "window"
 depends-top-level:
 - "AppDelegate"
 - !private "Array"
+- "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "StringLiteralType"
@@ -23,13 +25,20 @@ depends-top-level:
 - "UIApplicationDelegate"
 - "UIResponder"
 - "UIWindow"
-- !private "UNUserNotificationCenter"
+- "UNNotification"
+- "UNNotificationPresentationOptions"
+- "UNUserNotificationCenter"
+- "UNUserNotificationCenterDelegate"
+- "Void"
 - !private "print"
 depends-member:
 - ["12_019_ios_hw811AppDelegateC", "Bool"]
 - ["12_019_ios_hw811AppDelegateC", "UIApplication"]
 - ["12_019_ios_hw811AppDelegateC", "UIWindow"]
-- !private ["12_019_ios_hw811AppDelegateC", "UNUserNotificationCenter"]
+- ["12_019_ios_hw811AppDelegateC", "UNNotification"]
+- ["12_019_ios_hw811AppDelegateC", "UNNotificationPresentationOptions"]
+- ["12_019_ios_hw811AppDelegateC", "UNUserNotificationCenter"]
+- ["12_019_ios_hw811AppDelegateC", "Void"]
 - ["12_019_ios_hw811AppDelegateC", "application"]
 - ["12_019_ios_hw811AppDelegateC", "applicationDidBecomeActive"]
 - ["12_019_ios_hw811AppDelegateC", "applicationDidEnterBackground"]
@@ -45,6 +54,7 @@ depends-member:
 - ["12_019_ios_hw811AppDelegateC", "deinit"]
 - ["12_019_ios_hw811AppDelegateC", "init"]
 - !private ["12_019_ios_hw811AppDelegateC", "print"]
+- ["12_019_ios_hw811AppDelegateC", "userNotificationCenter"]
 - ["12_019_ios_hw811AppDelegateC", "window"]
 - !private ["SK", "init"]
 - !private ["SK", "init"]
@@ -66,10 +76,12 @@ depends-member:
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
 - !private ["s7CVarArgP", "current"]
+- !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "requestAuthorization"]
+- ["s7CVarArgP", "userNotificationCenter"]
 - ["s7CVarArgP", "window"]
 - !private ["Sl", "init"]
 - !private ["Sl", "init"]
@@ -91,10 +103,12 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "requestAuthorization"]
+- ["s28CustomDebugStringConvertibleP", "userNotificationCenter"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -119,10 +133,12 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "requestAuthorization"]
+- ["s23CustomStringConvertibleP", "userNotificationCenter"]
 - ["s23CustomStringConvertibleP", "window"]
 - !private ["Se", "_getBuiltinLogicValue"]
 - !private ["Se", "init"]
@@ -149,11 +165,13 @@ depends-member:
 - ["SQ", "applicationWillTerminate"]
 - !private ["SQ", "badge"]
 - !private ["SQ", "current"]
+- !private ["SQ", "delegate"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "print"]
 - !private ["SQ", "requestAuthorization"]
 - !private ["SQ", "sound"]
+- ["SQ", "userNotificationCenter"]
 - ["SQ", "window"]
 - !private ["s25ExpressibleByArrayLiteralP", "alert"]
 - !private ["s25ExpressibleByArrayLiteralP", "badge"]
@@ -182,10 +200,12 @@ depends-member:
 - ["SH", "applicationWillResignActive"]
 - ["SH", "applicationWillTerminate"]
 - !private ["SH", "current"]
+- !private ["SH", "delegate"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "print"]
 - !private ["SH", "requestAuthorization"]
+- ["SH", "userNotificationCenter"]
 - ["SH", "window"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -196,7 +216,10 @@ depends-member:
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIWindow"]
-- !private ["So8NSObjectC", "UNUserNotificationCenter"]
+- ["So8NSObjectC", "UNNotification"]
+- ["So8NSObjectC", "UNNotificationPresentationOptions"]
+- ["So8NSObjectC", "UNUserNotificationCenter"]
+- ["So8NSObjectC", "Void"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "applicationDidBecomeActive"]
 - ["So8NSObjectC", "applicationDidEnterBackground"]
@@ -210,10 +233,12 @@ depends-member:
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
 - !private ["So8NSObjectC", "current"]
+- !private ["So8NSObjectC", "delegate"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "requestAuthorization"]
+- ["So8NSObjectC", "userNotificationCenter"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "UNUserNotificationCenter"]
@@ -231,10 +256,12 @@ depends-member:
 - ["So8NSObjectP", "applicationWillResignActive"]
 - ["So8NSObjectP", "applicationWillTerminate"]
 - !private ["So8NSObjectP", "current"]
+- !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "requestAuthorization"]
+- ["So8NSObjectP", "userNotificationCenter"]
 - ["So8NSObjectP", "window"]
 - !private ["s9OptionSetP", "alert"]
 - !private ["s9OptionSetP", "badge"]
@@ -273,6 +300,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - !private ["So21UIApplicationDelegateP", "print"]
+- ["So21UIApplicationDelegateP", "userNotificationCenter"]
 - ["So21UIApplicationDelegateP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UNUserNotificationCenter"]
@@ -292,12 +320,16 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
+- ["So30UIPasteConfigurationSupportingP", "userNotificationCenter"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIWindow"]
-- !private ["So11UIResponderC", "UNUserNotificationCenter"]
+- ["So11UIResponderC", "UNNotification"]
+- ["So11UIResponderC", "UNNotificationPresentationOptions"]
+- ["So11UIResponderC", "UNUserNotificationCenter"]
+- ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "application"]
 - ["So11UIResponderC", "applicationDidBecomeActive"]
@@ -314,6 +346,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "userNotificationCenter"]
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UNUserNotificationCenter"]
@@ -333,6 +366,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
+- ["So30UIResponderStandardEditActionsP", "userNotificationCenter"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "UNUserNotificationCenter"]
@@ -352,12 +386,34 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "print"]
+- ["So23UIUserActivityRestoringP", "userNotificationCenter"]
 - ["So23UIUserActivityRestoringP", "window"]
 - !private ["So22UNAuthorizationOptionsV", "alert"]
 - !private ["So22UNAuthorizationOptionsV", "badge"]
 - !private ["So22UNAuthorizationOptionsV", "sound"]
+- !private ["So33UNNotificationPresentationOptionsV", "alert"]
+- !private ["So33UNNotificationPresentationOptionsV", "badge"]
+- !private ["So33UNNotificationPresentationOptionsV", "sound"]
 - !private ["So24UNUserNotificationCenterC", "current"]
+- !private ["So24UNUserNotificationCenterC", "delegate"]
 - !private ["So24UNUserNotificationCenterC", "requestAuthorization"]
+- !private ["So32UNUserNotificationCenterDelegateP", "UNUserNotificationCenter"]
+- ["So32UNUserNotificationCenterDelegateP", ""]
+- ["So32UNUserNotificationCenterDelegateP", "application"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidBecomeActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidEnterBackground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidFinishLaunching"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationSignificantTimeChange"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillEnterForeground"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillResignActive"]
+- ["So32UNUserNotificationCenterDelegateP", "applicationWillTerminate"]
+- !private ["So32UNUserNotificationCenterDelegateP", "print"]
+- ["So32UNUserNotificationCenterDelegateP", "userNotificationCenter"]
+- ["So32UNUserNotificationCenterDelegateP", "window"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -385,10 +441,12 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requestAuthorization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "userNotificationCenter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -435,7 +493,9 @@ depends-nominal:
 - "So30UIResponderStandardEditActionsP"
 - "So23UIUserActivityRestoringP"
 - !private "So22UNAuthorizationOptionsV"
+- !private "So33UNNotificationPresentationOptionsV"
 - !private "So24UNUserNotificationCenterC"
+- "So32UNUserNotificationCenterDelegateP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -472,4 +532,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e8962402b4f4448c7c972a6a441517f7"
+interface-hash: "761fa98adef14f8decd7a4c4d6baf524"

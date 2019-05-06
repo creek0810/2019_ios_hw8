@@ -38,7 +38,7 @@ class WallpaperViewController: UIViewController {
                 break
             }
         }
-        let puzzleName = "default\(currentPage * 4 + loc + 1)"
+        let puzzleName = "default \(currentPage * 4 + loc + 1)"
         let defaultPersonalScore = [puzzleName: false]
         UserDefaults.standard.register(defaults: defaultPersonalScore)
         
@@ -46,9 +46,11 @@ class WallpaperViewController: UIViewController {
         if haveFinish {
             self.performSegue(withIdentifier: "showWallpaper", sender: sender.image(for: .normal))
         } else {
-            print("you should pass the game first")
+            let controller = UIAlertController(title: "尚未完成挑戰", message: "必須先完成\(puzzleName)的拼圖挑戰，才可以獲取該桌布", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            controller.addAction(okAction)
+            present(controller, animated: true, completion: nil)
         }
-        
     }
     
     func initUI() {
