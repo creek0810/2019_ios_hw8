@@ -9,17 +9,25 @@
 import UIKit
 
 class ShareWallpaperViewController: UIViewController {
-
+    var wallpaperImage: UIImage?
+    @IBOutlet weak var wallpaperImageView: UIImageView!
+    
     @IBAction func shareScore(_ sender: Any) {
-        /*if let image = resultImage.image{
-         let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
-         self.present(activityViewController, animated: true, completion: nil)
-         }*/
+        if let image = wallpaperImageView.image {
+            let activityViewController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            self.present(activityViewController, animated: true, completion: nil)
+        }
     }
     
+    func initUI() {
+        if let wallpaperImage = wallpaperImage {
+            wallpaperImageView.image = wallpaperImage
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initUI()
 
         // Do any additional setup after loading the view.
     }

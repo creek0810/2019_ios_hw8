@@ -12,25 +12,24 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var defaultImage: [UIImage] = [UIImage]()
     var selectedImage: UIImage?
+    var selectedImageIndex: Int = -1
     
     @IBOutlet weak var menuTable: UITableView!
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if defaultImage.count >= 1{
-            return defaultImage.count + 1
-        } else {
-            return 0
+    @IBAction func selectPicture(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 1 {
+            pickPicture()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return defaultImage.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath) as! MenuTableViewCell
-        if(indexPath.row == defaultImage.count) {
-            cell.puzzleNameLabel.text = "自選圖片"
-        } else {
-            cell.puzzleNameLabel.text = "default \(indexPath.row)"
-            cell.puzzleImage.image = defaultImage[indexPath.row]
-        }
+        cell.puzzleNameLabel.text = "default \(indexPath.row + 1)"
+        cell.puzzleImage.image = defaultImage[indexPath.row]
         return cell
     }
     
@@ -51,11 +50,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == defaultImage.count {
-            pickPicture()
-        }else{
-            self.performSegue(withIdentifier: "goGameController", sender: defaultImage[indexPath.row])
-        }
+        selectedImageIndex = indexPath.row + 1
+        self.performSegue(withIdentifier: "goGameController", sender: defaultImage[indexPath.row])
     }
 
     func cutImage(originalImage: UIImage) -> [UIImage] {
@@ -85,7 +81,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         menuTable.dataSource = self
         menuTable.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        for i in 1...3 {
+        for i in 1...16 {
             defaultImage.append(UIImage(named: "default\(i)")!)
         }
         menuTable.reloadData()
@@ -95,8 +91,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         let image = sender as! UIImage
         
         let controller = segue.destination as! gameViewController
-        controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "hello")
+        if selectedImageIndex == -1 {
+            controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "personal")
+        } else {
+            controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "default\(selectedImageIndex)")
+        }
+        
     }
-    
 
 }

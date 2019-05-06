@@ -23,6 +23,10 @@ class gameViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func test(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
+        let result = UserDefaults.standard.bool(forKey: puzzle?.name ?? "")
+        print(result)
+        
         getUserName()
     }
 
@@ -53,6 +57,7 @@ class gameViewController: UIViewController {
         if let isFinish = isFinish, let timer = timer {
             if isFinish {
                 timer.invalidate()
+                UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
                 getUserName()
             }else{
                 let tmp = puzzle?.updateBtn()

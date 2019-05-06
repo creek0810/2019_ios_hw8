@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>是否允許本APP存取相簿</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>是否允許本APP存取相簿</string>
 	<key>LSApplicationCategoryType</key>
 	<string>Privacy - Photo Library Additions Usage Description</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>APP將儲存相簿</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

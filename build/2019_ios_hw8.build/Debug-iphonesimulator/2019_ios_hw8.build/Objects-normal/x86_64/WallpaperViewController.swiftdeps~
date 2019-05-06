@@ -1,0 +1,767 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "WallpaperViewController"
+provides-nominal:
+- "12_019_ios_hw823WallpaperViewControllerC"
+provides-member:
+- ["12_019_ios_hw823WallpaperViewControllerC", ""]
+provides-dynamic-lookup:
+- "nextSet"
+- "pageLabel"
+- "preSet"
+- "prepare"
+- "viewDidLoad"
+- "wallpaperCollection"
+- "wallpaperSelected"
+depends-top-level:
+- !private "!="
+- !private "*"
+- !private "+"
+- !private "+="
+- !private "-="
+- !private "..."
+- !private "=="
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "Dictionary"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "ShareWallpaperViewController"
+- !private "StringLiteralType"
+- "UIButton"
+- "UIImage"
+- "UILabel"
+- "UIStoryboardSegue"
+- "UIViewController"
+- !private "UserDefaults"
+- "WallpaperViewController"
+- !private "print"
+depends-member:
+- !private ["Sa", "append"]
+- ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "setImage"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["s10ArraySliceV", "setImage"]
+- !private ["SK", "append"]
+- ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "setImage"]
+- !private ["SK", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "setImage"]
+- !private ["So15CALayerDelegateP", "text"]
+- ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UserDefaults"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "bool"]
+- !private ["s7CVarArgP", "currentPage"]
+- !private ["s7CVarArgP", "destination"]
+- !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "imageSet"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initUI"]
+- !private ["s7CVarArgP", "pageLabel"]
+- !private ["s7CVarArgP", "performSegue"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "register"]
+- !private ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "updateUI"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "wallpaperCollection"]
+- !private ["s7CVarArgP", "wallpaperImage"]
+- !private ["Sl", "append"]
+- ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "setImage"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "bool"]
+- !private ["s28CustomDebugStringConvertibleP", "currentPage"]
+- !private ["s28CustomDebugStringConvertibleP", "destination"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "imageSet"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initUI"]
+- !private ["s28CustomDebugStringConvertibleP", "pageLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "performSegue"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "register"]
+- !private ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "updateUI"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "wallpaperCollection"]
+- !private ["s28CustomDebugStringConvertibleP", "wallpaperImage"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "setImage"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "text"]
+- ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "bool"]
+- !private ["s23CustomStringConvertibleP", "currentPage"]
+- !private ["s23CustomStringConvertibleP", "destination"]
+- !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "imageSet"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initUI"]
+- !private ["s23CustomStringConvertibleP", "pageLabel"]
+- !private ["s23CustomStringConvertibleP", "performSegue"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "register"]
+- !private ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "updateUI"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "wallpaperCollection"]
+- !private ["s23CustomStringConvertibleP", "wallpaperImage"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["Se", "text"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SE", "text"]
+- ["SQ", "UIImage"]
+- !private ["SQ", "UserDefaults"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "append"]
+- !private ["SQ", "bool"]
+- !private ["SQ", "currentPage"]
+- !private ["SQ", "destination"]
+- !private ["SQ", "image"]
+- !private ["SQ", "imageSet"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initUI"]
+- !private ["SQ", "normal"]
+- !private ["SQ", "pageLabel"]
+- !private ["SQ", "performSegue"]
+- !private ["SQ", "print"]
+- !private ["SQ", "register"]
+- !private ["SQ", "setImage"]
+- !private ["SQ", "standard"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "text"]
+- !private ["SQ", "updateUI"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "wallpaperCollection"]
+- !private ["SQ", "wallpaperImage"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "normal"]
+- !private ["s25ExpressibleByArrayLiteralP", "setImage"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "UIImage"]
+- !private ["SH", "UserDefaults"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "append"]
+- !private ["SH", "bool"]
+- !private ["SH", "currentPage"]
+- !private ["SH", "destination"]
+- !private ["SH", "image"]
+- !private ["SH", "imageSet"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "initUI"]
+- !private ["SH", "pageLabel"]
+- !private ["SH", "performSegue"]
+- !private ["SH", "print"]
+- !private ["SH", "register"]
+- !private ["SH", "setImage"]
+- !private ["SH", "standard"]
+- !private ["SH", "subscript"]
+- !private ["SH", "text"]
+- !private ["SH", "updateUI"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "wallpaperCollection"]
+- !private ["SH", "wallpaperImage"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "append"]
+- ["SM", "init"]
+- !private ["SM", "setImage"]
+- !private ["SM", "subscript"]
+- ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UserDefaults"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "currentPage"]
+- !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "imageSet"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "initUI"]
+- !private ["So8NSCodingP", "pageLabel"]
+- !private ["So8NSCodingP", "performSegue"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "updateUI"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "wallpaperCollection"]
+- !private ["So8NSCodingP", "wallpaperImage"]
+- ["So26NSExtensionRequestHandlingP", "UIImage"]
+- !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "currentPage"]
+- !private ["So26NSExtensionRequestHandlingP", "imageSet"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "initUI"]
+- !private ["So26NSExtensionRequestHandlingP", "pageLabel"]
+- !private ["So26NSExtensionRequestHandlingP", "performSegue"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "updateUI"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "wallpaperCollection"]
+- !private ["So26NSExtensionRequestHandlingP", "wallpaperImage"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "ShareWallpaperViewController"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- !private ["So8NSObjectC", "UserDefaults"]
+- !private ["So8NSObjectC", "bool"]
+- ["So8NSObjectC", "currentPage"]
+- !private ["So8NSObjectC", "destination"]
+- !private ["So8NSObjectC", "image"]
+- ["So8NSObjectC", "imageSet"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "initUI"]
+- ["So8NSObjectC", "nextSet"]
+- ["So8NSObjectC", "pageLabel"]
+- !private ["So8NSObjectC", "performSegue"]
+- ["So8NSObjectC", "preSet"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "register"]
+- !private ["So8NSObjectC", "setImage"]
+- !private ["So8NSObjectC", "standard"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "updateUI"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "wallpaperCollection"]
+- !private ["So8NSObjectC", "wallpaperImage"]
+- ["So8NSObjectC", "wallpaperSelected"]
+- ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UserDefaults"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bool"]
+- !private ["So8NSObjectP", "currentPage"]
+- !private ["So8NSObjectP", "destination"]
+- !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imageSet"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "initUI"]
+- !private ["So8NSObjectP", "pageLabel"]
+- !private ["So8NSObjectP", "performSegue"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "register"]
+- !private ["So8NSObjectP", "setImage"]
+- !private ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "updateUI"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "wallpaperCollection"]
+- !private ["So8NSObjectP", "wallpaperImage"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["s9OptionSetP", "normal"]
+- !private ["Sq", "subscript"]
+- !private ["Sq", "text"]
+- !private ["Sk", "append"]
+- ["Sk", "init"]
+- !private ["Sk", "setImage"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "setImage"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "normal"]
+- !private ["ST", "append"]
+- ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "setImage"]
+- !private ["ST", "subscript"]
+- !private ["s10SetAlgebraP", "normal"]
+- !private ["12_019_ios_hw828ShareWallpaperViewControllerC", "wallpaperImage"]
+- !private ["So14UIControlStateV", "normal"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "setImage"]
+- !private ["So12UIAppearanceP", "text"]
+- ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UserDefaults"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "currentPage"]
+- !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "imageSet"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "initUI"]
+- !private ["So21UIAppearanceContainerP", "pageLabel"]
+- !private ["So21UIAppearanceContainerP", "performSegue"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "updateUI"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "wallpaperCollection"]
+- !private ["So21UIAppearanceContainerP", "wallpaperImage"]
+- !private ["So8UIButtonC", "image"]
+- !private ["So8UIButtonC", "setImage"]
+- ["So18UIContentContainerP", "UIImage"]
+- !private ["So18UIContentContainerP", "UserDefaults"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "currentPage"]
+- !private ["So18UIContentContainerP", "imageSet"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "initUI"]
+- !private ["So18UIContentContainerP", "pageLabel"]
+- !private ["So18UIContentContainerP", "performSegue"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "updateUI"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "wallpaperCollection"]
+- !private ["So18UIContentContainerP", "wallpaperImage"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "image"]
+- !private ["So9UIControlC", "setImage"]
+- !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "setImage"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "setImage"]
+- !private ["So13UIDynamicItemP", "text"]
+- ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UserDefaults"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "currentPage"]
+- !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "imageSet"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "initUI"]
+- !private ["So18UIFocusEnvironmentP", "pageLabel"]
+- !private ["So18UIFocusEnvironmentP", "performSegue"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "updateUI"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "wallpaperCollection"]
+- !private ["So18UIFocusEnvironmentP", "wallpaperImage"]
+- !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "setImage"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So20UIFocusItemContainerP", "image"]
+- !private ["So20UIFocusItemContainerP", "setImage"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So7UILabelC", "text"]
+- ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "currentPage"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "imageSet"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "initUI"]
+- !private ["So30UIPasteConfigurationSupportingP", "pageLabel"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "updateUI"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "wallpaperCollection"]
+- !private ["So30UIPasteConfigurationSupportingP", "wallpaperImage"]
+- ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "ShareWallpaperViewController"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- !private ["So11UIResponderC", "UserDefaults"]
+- ["So11UIResponderC", "currentPage"]
+- !private ["So11UIResponderC", "image"]
+- ["So11UIResponderC", "imageSet"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "initUI"]
+- ["So11UIResponderC", "nextSet"]
+- ["So11UIResponderC", "pageLabel"]
+- !private ["So11UIResponderC", "performSegue"]
+- ["So11UIResponderC", "preSet"]
+- ["So11UIResponderC", "prepare"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "setImage"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "updateUI"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "wallpaperCollection"]
+- !private ["So11UIResponderC", "wallpaperImage"]
+- ["So11UIResponderC", "wallpaperSelected"]
+- ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "currentPage"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "imageSet"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "initUI"]
+- !private ["So30UIResponderStandardEditActionsP", "pageLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "updateUI"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "wallpaperCollection"]
+- !private ["So30UIResponderStandardEditActionsP", "wallpaperImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "image"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- ["So16UIStateRestoringP", "UIImage"]
+- !private ["So16UIStateRestoringP", "UserDefaults"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "currentPage"]
+- !private ["So16UIStateRestoringP", "imageSet"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "initUI"]
+- !private ["So16UIStateRestoringP", "pageLabel"]
+- !private ["So16UIStateRestoringP", "performSegue"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "updateUI"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "wallpaperCollection"]
+- !private ["So16UIStateRestoringP", "wallpaperImage"]
+- !private ["So17UIStoryboardSegueC", "destination"]
+- ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UserDefaults"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "currentPage"]
+- !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "imageSet"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "initUI"]
+- !private ["So18UITraitEnvironmentP", "pageLabel"]
+- !private ["So18UITraitEnvironmentP", "performSegue"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "updateUI"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "wallpaperCollection"]
+- !private ["So18UITraitEnvironmentP", "wallpaperImage"]
+- ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "currentPage"]
+- !private ["So23UIUserActivityRestoringP", "image"]
+- !private ["So23UIUserActivityRestoringP", "imageSet"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "initUI"]
+- !private ["So23UIUserActivityRestoringP", "pageLabel"]
+- !private ["So23UIUserActivityRestoringP", "performSegue"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "setImage"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "updateUI"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "wallpaperCollection"]
+- !private ["So23UIUserActivityRestoringP", "wallpaperImage"]
+- !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "setImage"]
+- !private ["So6UIViewC", "text"]
+- ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "ShareWallpaperViewController"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "UIImage"]
+- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- !private ["So16UIViewControllerC", "UserDefaults"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "currentPage"]
+- ["So16UIViewControllerC", "imageSet"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "initUI"]
+- ["So16UIViewControllerC", "nextSet"]
+- ["So16UIViewControllerC", "pageLabel"]
+- !private ["So16UIViewControllerC", "performSegue"]
+- ["So16UIViewControllerC", "preSet"]
+- ["So16UIViewControllerC", "prepare"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "updateUI"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "wallpaperCollection"]
+- !private ["So16UIViewControllerC", "wallpaperImage"]
+- ["So16UIViewControllerC", "wallpaperSelected"]
+- !private ["So14NSUserDefaultsC", "bool"]
+- !private ["So14NSUserDefaultsC", "register"]
+- !private ["So14NSUserDefaultsC", "standard"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "Int"]
+- !private ["12_019_ios_hw823WallpaperViewControllerC", "ShareWallpaperViewController"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "UIButton"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "UIImage"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "UILabel"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "UIStoryboardSegue"]
+- !private ["12_019_ios_hw823WallpaperViewControllerC", "UserDefaults"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "currentPage"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "imageSet"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "init"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "initUI"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "nextSet"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "pageLabel"]
+- !private ["12_019_ios_hw823WallpaperViewControllerC", "performSegue"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "preSet"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "prepare"]
+- !private ["12_019_ios_hw823WallpaperViewControllerC", "print"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "updateUI"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "viewDidLoad"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "wallpaperCollection"]
+- ["12_019_ios_hw823WallpaperViewControllerC", "wallpaperSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "setImage"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bool"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "currentPage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "destination"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageSet"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "initUI"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pageLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "updateUI"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "wallpaperCollection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "wallpaperImage"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "Sa"
+- "s13ArrayProtocolP"
+- !private "s10ArraySliceV"
+- "SK"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "SM"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "Sk"
+- "Sm"
+- !private "SY"
+- "ST"
+- !private "s10SetAlgebraP"
+- !private "12_019_ios_hw828ShareWallpaperViewControllerC"
+- !private "So14UIControlStateV"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So17UIStoryboardSegueC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "So14NSUserDefaultsC"
+- "12_019_ios_hw823WallpaperViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e493d08f25b8d8d9215692047908df3b"

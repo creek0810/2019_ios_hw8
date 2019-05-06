@@ -212,6 +212,7 @@ SWIFT_CLASS("_TtC12_019_ios_hw817MenuTableViewCell")
 @end
 
 @class UITableView;
+@class UISegmentedControl;
 @class UIImagePickerController;
 @class UIStoryboardSegue;
 @class NSBundle;
@@ -219,6 +220,7 @@ SWIFT_CLASS("_TtC12_019_ios_hw817MenuTableViewCell")
 SWIFT_CLASS("_TtC12_019_ios_hw818MenuViewController")
 @interface MenuViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified menuTable;
+- (IBAction)selectPicture:(UISegmentedControl * _Nonnull)sender;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
@@ -241,7 +243,6 @@ SWIFT_CLASS("_TtC12_019_ios_hw823ScoreBoardTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC12_019_ios_hw824ScoreBoardViewController")
 @interface ScoreBoardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -258,6 +259,7 @@ SWIFT_CLASS("_TtC12_019_ios_hw824ScoreBoardViewController")
 
 SWIFT_CLASS("_TtC12_019_ios_hw828ShareWallpaperViewController")
 @interface ShareWallpaperViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified wallpaperImageView;
 - (IBAction)shareScore:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -265,6 +267,20 @@ SWIFT_CLASS("_TtC12_019_ios_hw828ShareWallpaperViewController")
 @end
 
 @class UIButton;
+
+SWIFT_CLASS("_TtC12_019_ios_hw823WallpaperViewController")
+@interface WallpaperViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pageLabel;
+@property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified wallpaperCollection;
+- (IBAction)preSet:(id _Nonnull)sender;
+- (IBAction)nextSet:(id _Nonnull)sender;
+- (IBAction)wallpaperSelected:(UIButton * _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC12_019_ios_hw818gameViewController")
 @interface gameViewController : UIViewController
