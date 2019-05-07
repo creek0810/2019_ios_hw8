@@ -20,6 +20,7 @@
 		577A1A1222800474009F7C2A /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A1A1122800474009F7C2A /* WallpaperViewController.swift */; };
 		57A5207E227C56B300428EB1 /* record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5207D227C56B300428EB1 /* record.swift */; };
 		57A52080227C5AE800428EB1 /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5207F227C5AE800428EB1 /* ScoreBoardViewController.swift */; };
+		57B808472281F65A00C0A245 /* clap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 57B808462281F65A00C0A245 /* clap.mp3 */; };
 		57DE5F44227D24DA0025C49E /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DE5F43227D24DA0025C49E /* MenuTableViewCell.swift */; };
 		57F886D6227F3A0600828925 /* ShareWallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F886D5227F3A0600828925 /* ShareWallpaperViewController.swift */; };
 		57F9DC73227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F9DC72227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift */; };
@@ -62,6 +63,7 @@
 		577A1A1122800474009F7C2A /* WallpaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
 		57A5207D227C56B300428EB1 /* record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = record.swift; sourceTree = "<group>"; };
 		57A5207F227C5AE800428EB1 /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
+		57B808462281F65A00C0A245 /* clap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clap.mp3; path = ../../Downloads/clap.mp3; sourceTree = "<group>"; };
 		57DE5F43227D24DA0025C49E /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		57F886D5227F3A0600828925 /* ShareWallpaperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareWallpaperViewController.swift; sourceTree = "<group>"; };
 		57F9DC72227D8ED9007DABA4 /* ScoreBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		57020B112277542200FDC893 = {
 			isa = PBXGroup;
 			children = (
+				57B808462281F65A00C0A245 /* clap.mp3 */,
 				57020B1C2277542300FDC893 /* 2019_ios_hw8 */,
 				57020B312277542400FDC893 /* 2019_ios_hw8Tests */,
 				57020B3C2277542400FDC893 /* 2019_ios_hw8UITests */,
@@ -282,6 +285,7 @@
 			files = (
 				57020B282277542400FDC893 /* LaunchScreen.storyboard in Resources */,
 				57020B252277542400FDC893 /* Assets.xcassets in Resources */,
+				57B808472281F65A00C0A245 /* clap.mp3 in Resources */,
 				57020B232277542300FDC893 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

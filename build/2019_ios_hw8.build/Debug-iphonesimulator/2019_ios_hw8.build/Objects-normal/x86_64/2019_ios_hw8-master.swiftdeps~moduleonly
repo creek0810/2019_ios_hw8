@@ -1,15 +1,15 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "47cf1b5fdd9da524730d250c01088701"
-build_time: [1557161355, 751425000]
+build_time: [1557250211, 887442000]
 inputs:
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/gameViewController.swift": [1557161355, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/gameViewController.swift": [1557250211, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift": [1556965378, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuTableViewCell.swift": [1556934779, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ShareWallpaperViewController.swift": [1557126480, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/Puzzle.swift": [1557035438, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift": [1557156885, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/AppDelegate.swift": [1557161322, 0]
-  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ScoreBoardViewController.swift": [1557070380, 0]
+  "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ScoreBoardViewController.swift": [1557247332, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Model/record.swift": [1557070994, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/WallpaperViewController.swift": [1557156256, 0]
   "/Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/ScoreBoardTableViewCell.swift": [1556964693, 0]

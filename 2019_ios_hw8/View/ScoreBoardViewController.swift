@@ -43,7 +43,7 @@ class ScoreBoardViewController: UIViewController, UITableViewDelegate, UITableVi
             cell.costTime.text = personalScoreBoard[indexPath.row].costTime
             cell.rank.text = "\(indexPath.row + 1)"
             if personalScoreBoard[indexPath.row] == curRecord! {
-                cell.backgroundColor = UIColor.red
+                cell.backgroundColor = UIColor(red: 247.0 / 255, green: 247.0 / 255, blue: 223.0 / 255, alpha: 1)
             }else{
                 cell.backgroundColor = UIColor.white
             }
@@ -52,7 +52,7 @@ class ScoreBoardViewController: UIViewController, UITableViewDelegate, UITableVi
             cell.costTime.text = globalScoreBoard[indexPath.row].costTime
             cell.rank.text = "\(indexPath.row + 1)"
             if indexPath.row == globalScoreBoard[globalScoreBoard.count - 1].score {
-                cell.backgroundColor = UIColor.red
+                cell.backgroundColor = UIColor(red: 247.0 / 255, green: 247.0 / 255, blue: 223.0 / 255, alpha: 1)
             }else{
                 cell.backgroundColor = UIColor.white
             }

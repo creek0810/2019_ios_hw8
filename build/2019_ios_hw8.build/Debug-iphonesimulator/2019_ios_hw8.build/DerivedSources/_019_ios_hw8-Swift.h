@@ -285,16 +285,19 @@ SWIFT_CLASS("_TtC12_019_ios_hw823WallpaperViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 
 SWIFT_CLASS("_TtC12_019_ios_hw818gameViewController")
 @interface gameViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified maskView;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified btnCollection;
 @property (nonatomic, copy) IBOutletCollection(UIImageView) NSArray<UIImageView *> * _Null_unspecified puzzleImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified finishImage;
+- (IBAction)testFinish:(id _Nonnull)sender;
 - (IBAction)returnMenu:(id _Nonnull)sender;
-- (IBAction)test:(id _Nonnull)sender;
 - (IBAction)btnPressed:(UIButton * _Nonnull)sender;
-- (IBAction)gameStart:(id _Nonnull)sender;
+- (IBAction)gameStart:(UIButton * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

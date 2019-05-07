@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import AudioToolbox
 
 class gameViewController: UIViewController {
     
@@ -22,7 +23,16 @@ class gameViewController: UIViewController {
     @IBOutlet weak var finishImage: UIImageView!
     
     @IBAction func testFinish(_ sender: Any) {
-        firstFinish()
+        let fileURL = NSURL(string: "clap.mp3")
+        var theSoundID: SystemSoundID = 0
+        
+        
+        AudioServicesCreateSystemSoundID(fileURL!, &theSoundID)
+        
+        AudioServicesPlaySystemSound(theSoundID)
+        
+        
+        //firstFinish()
        
     }
     @IBAction func returnMenu(_ sender: Any) {
@@ -60,7 +70,8 @@ class gameViewController: UIViewController {
         }
     }
     
-    @IBAction func gameStart(_ sender: Any) {
+    @IBAction func gameStart(_ sender: UIButton) {
+        sender.isEnabled = false
         let disableList = puzzle?.updateBtn()
         disablBtn(list: disableList!)
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
