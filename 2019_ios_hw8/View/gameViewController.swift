@@ -15,10 +15,16 @@ class gameViewController: UIViewController {
     var timer: Timer?
     var count: Int = 0
     
+    @IBOutlet weak var maskView: UIView!
     @IBOutlet var btnCollection: [UIButton]!
     @IBOutlet var puzzleImage: [UIImageView]!
     @IBOutlet var timeLabel: UILabel!
+    @IBOutlet weak var finishImage: UIImageView!
     
+    @IBAction func testFinish(_ sender: Any) {
+        firstFinish()
+       
+    }
     @IBAction func returnMenu(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -42,11 +48,11 @@ class gameViewController: UIViewController {
                 
                 let haveFinish = UserDefaults.standard.bool(forKey: puzzle?.name ?? "")
                 if haveFinish == false {
-                    print("new finish")
-                    sendNotification()
-                    UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
+                    firstFinish()
+                } else {
+                    getUserName()
                 }
-                getUserName()
+                
             }else{
                 let tmp = puzzle?.updateBtn()
                 disablBtn(list: tmp!)
@@ -65,6 +71,28 @@ class gameViewController: UIViewController {
             self.timeLabel.text = "\(hourInt):\(minsInt):\(secInt)"
         }
     }
+    
+    func firstFinish() {
+        sendNotification()
+        UserDefaults.standard.set(true, forKey: puzzle?.name ?? "")
+        let token = puzzle?.name.components(separatedBy: " ")
+        if let token = token {
+            let ID = Int(token[1])!
+            print("wallpaper\(ID)")
+            self.finishImage.image = UIImage(named: "wallpaper\(ID)")
+            self.finishImage.alpha = 0
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 0, animations: {
+                self.maskView.alpha = 1
+                self.finishImage.alpha = 1
+            }, completion: {(_) -> () in
+                let tmpTimer: Timer?
+                tmpTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false, block: { (_) in
+                    self.getUserName()
+                })
+            })
+        }
+    }
+    
     
     func sendNotification() {
         
