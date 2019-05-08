@@ -16,6 +16,7 @@ class gameViewController: UIViewController {
     var timer: Timer?
     var count: Int = 0
     
+    @IBOutlet weak var titleItem: UINavigationItem!
     @IBOutlet weak var maskView: UIView!
     @IBOutlet var btnCollection: [UIButton]!
     @IBOutlet var puzzleImage: [UIImageView]!
@@ -23,16 +24,16 @@ class gameViewController: UIViewController {
     @IBOutlet weak var finishImage: UIImageView!
     
     @IBAction func testFinish(_ sender: Any) {
-        let fileURL = NSURL(string: "clap.mp3")
-        var theSoundID: SystemSoundID = 0
+        //let fileURL = NSURL(string: "clap.mp3")
+        //var theSoundID: SystemSoundID = 0
         
         
-        AudioServicesCreateSystemSoundID(fileURL!, &theSoundID)
+        //AudioServicesCreateSystemSoundID(fileURL!, &theSoundID)
         
-        AudioServicesPlaySystemSound(theSoundID)
+        //AudioServicesPlaySystemSound(theSoundID)
         
         
-        //firstFinish()
+        firstFinish()
        
     }
     @IBAction func returnMenu(_ sender: Any) {
@@ -92,7 +93,7 @@ class gameViewController: UIViewController {
             print("wallpaper\(ID)")
             self.finishImage.image = UIImage(named: "wallpaper\(ID)")
             self.finishImage.alpha = 0
-            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 0, animations: {
+            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 1, animations: {
                 self.maskView.alpha = 1
                 self.finishImage.alpha = 1
             }, completion: {(_) -> () in
@@ -167,6 +168,8 @@ class gameViewController: UIViewController {
     }
     
     func updateUI() {
+        titleItem.title = puzzle?.name
+        print(puzzle?.name)
         let seq = puzzle?.shuffle()
         if let seq = seq {
             var count = -1
