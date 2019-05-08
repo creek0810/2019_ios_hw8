@@ -9,7 +9,6 @@ provides-dynamic-lookup:
 - "imagePickerController"
 - "menuTable"
 - "prepare"
-- "selectPicture"
 - "tableView"
 - "viewDidLoad"
 depends-top-level:
@@ -38,7 +37,6 @@ depends-top-level:
 - "UIImagePickerController"
 - "UIImagePickerControllerDelegate"
 - "UINavigationControllerDelegate"
-- "UISegmentedControl"
 - "UIStoryboardSegue"
 - "UITableView"
 - "UITableViewCell"
@@ -47,7 +45,6 @@ depends-top-level:
 - "UIViewController"
 - !private "fatalError"
 - !private "gameViewController"
-- !private "print"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -74,7 +71,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "puzzleNameLabel"]
 - !private ["So15CALayerDelegateP", "register"]
 - !private ["So15CALayerDelegateP", "reloadData"]
-- !private ["So15CALayerDelegateP", "selectedSegmentIndex"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So10CGImageRefa", "cropping"]
 - !private ["So6CGRectV", "init"]
@@ -116,7 +112,6 @@ depends-member:
 - !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "pickPicture"]
 - !private ["s7CVarArgP", "present"]
-- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "puzzle"]
 - !private ["s7CVarArgP", "puzzleImage"]
 - !private ["s7CVarArgP", "puzzleNameLabel"]
@@ -138,7 +133,6 @@ depends-member:
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
 - !private ["s7CVarArgP", "selectedImageIndex"]
-- !private ["s7CVarArgP", "selectedSegmentIndex"]
 - !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "sourceType"]
 - !private ["s7CVarArgP", "subscript"]
@@ -195,7 +189,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "pickPicture"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "puzzle"]
 - !private ["s28CustomDebugStringConvertibleP", "puzzleImage"]
 - !private ["s28CustomDebugStringConvertibleP", "puzzleNameLabel"]
@@ -218,7 +211,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "selectedImageIndex"]
-- !private ["s28CustomDebugStringConvertibleP", "selectedSegmentIndex"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "sourceType"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
@@ -286,7 +278,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "pickPicture"]
 - !private ["s23CustomStringConvertibleP", "present"]
-- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "puzzle"]
 - !private ["s23CustomStringConvertibleP", "puzzleImage"]
 - !private ["s23CustomStringConvertibleP", "puzzleNameLabel"]
@@ -309,7 +300,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
 - !private ["s23CustomStringConvertibleP", "selectedImageIndex"]
-- !private ["s23CustomStringConvertibleP", "selectedSegmentIndex"]
 - !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "sourceType"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -390,7 +380,6 @@ depends-member:
 - !private ["SQ", "photoLibrary"]
 - !private ["SQ", "pickPicture"]
 - !private ["SQ", "present"]
-- !private ["SQ", "print"]
 - !private ["SQ", "puzzle"]
 - !private ["SQ", "puzzleImage"]
 - !private ["SQ", "puzzleNameLabel"]
@@ -413,7 +402,6 @@ depends-member:
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
 - !private ["SQ", "selectedImageIndex"]
-- !private ["SQ", "selectedSegmentIndex"]
 - !private ["SQ", "size"]
 - !private ["SQ", "sourceType"]
 - !private ["SQ", "subscript"]
@@ -484,7 +472,6 @@ depends-member:
 - !private ["SH", "photoLibrary"]
 - !private ["SH", "pickPicture"]
 - !private ["SH", "present"]
-- !private ["SH", "print"]
 - !private ["SH", "puzzle"]
 - !private ["SH", "puzzleImage"]
 - !private ["SH", "puzzleNameLabel"]
@@ -507,7 +494,6 @@ depends-member:
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
 - !private ["SH", "selectedImageIndex"]
-- !private ["SH", "selectedSegmentIndex"]
 - !private ["SH", "size"]
 - !private ["SH", "sourceType"]
 - !private ["SH", "subscript"]
@@ -532,7 +518,6 @@ depends-member:
 - !private ["12_019_ios_hw818MenuViewControllerC", "Puzzle"]
 - ["12_019_ios_hw818MenuViewControllerC", "UIImage"]
 - ["12_019_ios_hw818MenuViewControllerC", "UIImagePickerController"]
-- ["12_019_ios_hw818MenuViewControllerC", "UISegmentedControl"]
 - ["12_019_ios_hw818MenuViewControllerC", "UIStoryboardSegue"]
 - ["12_019_ios_hw818MenuViewControllerC", "UITableView"]
 - ["12_019_ios_hw818MenuViewControllerC", "UITableViewCell"]
@@ -557,7 +542,6 @@ depends-member:
 - ["12_019_ios_hw818MenuViewControllerC", "pickPicture"]
 - ["12_019_ios_hw818MenuViewControllerC", "prepare"]
 - !private ["12_019_ios_hw818MenuViewControllerC", "present"]
-- !private ["12_019_ios_hw818MenuViewControllerC", "print"]
 - ["12_019_ios_hw818MenuViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["12_019_ios_hw818MenuViewControllerC", "scrollViewDidEndDecelerating"]
 - ["12_019_ios_hw818MenuViewControllerC", "scrollViewDidEndDragging"]
@@ -573,7 +557,6 @@ depends-member:
 - ["12_019_ios_hw818MenuViewControllerC", "scrollViewWillEndDragging"]
 - ["12_019_ios_hw818MenuViewControllerC", "sectionIndexTitles"]
 - ["12_019_ios_hw818MenuViewControllerC", "sectionIndexTitlesForTableView"]
-- ["12_019_ios_hw818MenuViewControllerC", "selectPicture"]
 - ["12_019_ios_hw818MenuViewControllerC", "selectedImage"]
 - ["12_019_ios_hw818MenuViewControllerC", "selectedImageIndex"]
 - ["12_019_ios_hw818MenuViewControllerC", "tableView"]
@@ -619,7 +602,6 @@ depends-member:
 - !private ["So8NSCodingP", "performSegue"]
 - !private ["So8NSCodingP", "pickPicture"]
 - !private ["So8NSCodingP", "present"]
-- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "puzzle"]
 - !private ["So8NSCodingP", "puzzleImage"]
 - !private ["So8NSCodingP", "puzzleNameLabel"]
@@ -641,7 +623,6 @@ depends-member:
 - ["So8NSCodingP", "sectionIndexTitles"]
 - ["So8NSCodingP", "sectionIndexTitlesForTableView"]
 - !private ["So8NSCodingP", "selectedImageIndex"]
-- !private ["So8NSCodingP", "selectedSegmentIndex"]
 - !private ["So8NSCodingP", "size"]
 - !private ["So8NSCodingP", "sourceType"]
 - ["So8NSCodingP", "tableView"]
@@ -677,7 +658,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - !private ["So26NSExtensionRequestHandlingP", "pickPicture"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "puzzle"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
@@ -715,7 +695,6 @@ depends-member:
 - !private ["So8NSObjectC", "Puzzle"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImagePickerController"]
-- ["So8NSObjectC", "UISegmentedControl"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
@@ -746,7 +725,6 @@ depends-member:
 - ["So8NSObjectC", "pickPicture"]
 - ["So8NSObjectC", "prepare"]
 - !private ["So8NSObjectC", "present"]
-- !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "puzzle"]
 - !private ["So8NSObjectC", "puzzleImage"]
 - !private ["So8NSObjectC", "puzzleNameLabel"]
@@ -767,10 +745,8 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
-- ["So8NSObjectC", "selectPicture"]
 - ["So8NSObjectC", "selectedImage"]
 - ["So8NSObjectC", "selectedImageIndex"]
-- !private ["So8NSObjectC", "selectedSegmentIndex"]
 - !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "sourceType"]
 - ["So8NSObjectC", "tableView"]
@@ -811,7 +787,6 @@ depends-member:
 - !private ["So8NSObjectP", "performSegue"]
 - !private ["So8NSObjectP", "pickPicture"]
 - !private ["So8NSObjectP", "present"]
-- !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "puzzle"]
 - !private ["So8NSObjectP", "puzzleImage"]
 - !private ["So8NSObjectP", "puzzleNameLabel"]
@@ -833,7 +808,6 @@ depends-member:
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
 - !private ["So8NSObjectP", "selectedImageIndex"]
-- !private ["So8NSObjectP", "selectedSegmentIndex"]
 - !private ["So8NSObjectP", "size"]
 - !private ["So8NSObjectP", "sourceType"]
 - ["So8NSObjectP", "tableView"]
@@ -899,7 +873,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "puzzleNameLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "register"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
-- !private ["So29UIAccessibilityIdentificationP", "selectedSegmentIndex"]
 - !private ["So29UIAccessibilityIdentificationP", "size"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So12UIAppearanceP", "dataSource"]
@@ -910,7 +883,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "puzzleNameLabel"]
 - !private ["So12UIAppearanceP", "register"]
 - !private ["So12UIAppearanceP", "reloadData"]
-- !private ["So12UIAppearanceP", "selectedSegmentIndex"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "Double"]
@@ -943,7 +915,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - !private ["So21UIAppearanceContainerP", "pickPicture"]
 - !private ["So21UIAppearanceContainerP", "present"]
-- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "puzzle"]
 - !private ["So21UIAppearanceContainerP", "puzzleImage"]
 - !private ["So21UIAppearanceContainerP", "puzzleNameLabel"]
@@ -965,7 +936,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "sectionIndexTitles"]
 - ["So21UIAppearanceContainerP", "sectionIndexTitlesForTableView"]
 - !private ["So21UIAppearanceContainerP", "selectedImageIndex"]
-- !private ["So21UIAppearanceContainerP", "selectedSegmentIndex"]
 - !private ["So21UIAppearanceContainerP", "sourceType"]
 - ["So21UIAppearanceContainerP", "tableView"]
 - !private ["So21UIAppearanceContainerP", "text"]
@@ -1000,7 +970,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "performSegue"]
 - !private ["So18UIContentContainerP", "pickPicture"]
 - !private ["So18UIContentContainerP", "present"]
-- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "puzzle"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
@@ -1024,7 +993,6 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
-- !private ["So9UIControlC", "selectedSegmentIndex"]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
@@ -1033,7 +1001,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "puzzleNameLabel"]
 - !private ["So17UICoordinateSpaceP", "register"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
-- !private ["So17UICoordinateSpaceP", "selectedSegmentIndex"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So23UIDataSourceTranslatingP", "dataSource"]
 - !private ["So23UIDataSourceTranslatingP", "delegate"]
@@ -1048,7 +1015,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "puzzleNameLabel"]
 - !private ["So13UIDynamicItemP", "register"]
 - !private ["So13UIDynamicItemP", "reloadData"]
-- !private ["So13UIDynamicItemP", "selectedSegmentIndex"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "Double"]
@@ -1081,7 +1047,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - !private ["So18UIFocusEnvironmentP", "pickPicture"]
 - !private ["So18UIFocusEnvironmentP", "present"]
-- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "puzzle"]
 - !private ["So18UIFocusEnvironmentP", "puzzleImage"]
 - !private ["So18UIFocusEnvironmentP", "puzzleNameLabel"]
@@ -1103,7 +1068,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "sectionIndexTitles"]
 - ["So18UIFocusEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UIFocusEnvironmentP", "selectedImageIndex"]
-- !private ["So18UIFocusEnvironmentP", "selectedSegmentIndex"]
 - !private ["So18UIFocusEnvironmentP", "sourceType"]
 - ["So18UIFocusEnvironmentP", "tableView"]
 - !private ["So18UIFocusEnvironmentP", "text"]
@@ -1118,7 +1082,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "puzzleNameLabel"]
 - !private ["So11UIFocusItemP", "register"]
 - !private ["So11UIFocusItemP", "reloadData"]
-- !private ["So11UIFocusItemP", "selectedSegmentIndex"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "dataSource"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
@@ -1128,7 +1091,6 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "puzzleNameLabel"]
 - !private ["So20UIFocusItemContainerP", "register"]
 - !private ["So20UIFocusItemContainerP", "reloadData"]
-- !private ["So20UIFocusItemContainerP", "selectedSegmentIndex"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
 - !private ["So30UIFocusItemScrollableContainerP", "delegate"]
@@ -1168,7 +1130,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "performSegue"]
 - !private ["So31UIImagePickerControllerDelegateP", "pickPicture"]
 - !private ["So31UIImagePickerControllerDelegateP", "present"]
-- !private ["So31UIImagePickerControllerDelegateP", "print"]
 - ["So31UIImagePickerControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So31UIImagePickerControllerDelegateP", "scrollViewDidEndDecelerating"]
 - ["So31UIImagePickerControllerDelegateP", "scrollViewDidEndDragging"]
@@ -1221,7 +1182,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "performSegue"]
 - !private ["So30UINavigationControllerDelegateP", "pickPicture"]
 - !private ["So30UINavigationControllerDelegateP", "present"]
-- !private ["So30UINavigationControllerDelegateP", "print"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidEndDecelerating"]
 - ["So30UINavigationControllerDelegateP", "scrollViewDidEndDragging"]
@@ -1272,7 +1232,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "pickPicture"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "puzzle"]
 - !private ["So30UIPasteConfigurationSupportingP", "puzzleImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "puzzleNameLabel"]
@@ -1294,7 +1253,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitles"]
 - ["So30UIPasteConfigurationSupportingP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "selectedImageIndex"]
-- !private ["So30UIPasteConfigurationSupportingP", "selectedSegmentIndex"]
 - !private ["So30UIPasteConfigurationSupportingP", "sourceType"]
 - ["So30UIPasteConfigurationSupportingP", "tableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
@@ -1310,7 +1268,6 @@ depends-member:
 - !private ["So11UIResponderC", "Puzzle"]
 - ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIImagePickerController"]
-- ["So11UIResponderC", "UISegmentedControl"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
@@ -1339,7 +1296,6 @@ depends-member:
 - ["So11UIResponderC", "pickPicture"]
 - ["So11UIResponderC", "prepare"]
 - !private ["So11UIResponderC", "present"]
-- !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "puzzle"]
 - !private ["So11UIResponderC", "puzzleImage"]
 - !private ["So11UIResponderC", "puzzleNameLabel"]
@@ -1360,10 +1316,8 @@ depends-member:
 - ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "sectionIndexTitles"]
 - ["So11UIResponderC", "sectionIndexTitlesForTableView"]
-- ["So11UIResponderC", "selectPicture"]
 - ["So11UIResponderC", "selectedImage"]
 - ["So11UIResponderC", "selectedImageIndex"]
-- !private ["So11UIResponderC", "selectedSegmentIndex"]
 - !private ["So11UIResponderC", "sourceType"]
 - ["So11UIResponderC", "tableView"]
 - !private ["So11UIResponderC", "text"]
@@ -1401,7 +1355,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "pickPicture"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "puzzle"]
 - !private ["So30UIResponderStandardEditActionsP", "puzzleImage"]
 - !private ["So30UIResponderStandardEditActionsP", "puzzleNameLabel"]
@@ -1423,7 +1376,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitles"]
 - ["So30UIResponderStandardEditActionsP", "sectionIndexTitlesForTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "selectedImageIndex"]
-- !private ["So30UIResponderStandardEditActionsP", "selectedSegmentIndex"]
 - !private ["So30UIResponderStandardEditActionsP", "sourceType"]
 - ["So30UIResponderStandardEditActionsP", "tableView"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
@@ -1459,7 +1411,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "performSegue"]
 - !private ["So20UIScrollViewDelegateP", "pickPicture"]
 - !private ["So20UIScrollViewDelegateP", "present"]
-- !private ["So20UIScrollViewDelegateP", "print"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
@@ -1479,13 +1430,11 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "tableView"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
-- !private ["So18UISegmentedControlC", "selectedSegmentIndex"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "register"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "selectedSegmentIndex"]
 - !private ["So16UIStateRestoringP", "CGRect"]
 - !private ["So16UIStateRestoringP", "Double"]
 - ["So16UIStateRestoringP", "InfoKey"]
@@ -1514,7 +1463,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "performSegue"]
 - !private ["So16UIStateRestoringP", "pickPicture"]
 - !private ["So16UIStateRestoringP", "present"]
-- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "puzzle"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
@@ -1569,7 +1517,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "performSegue"]
 - !private ["So21UITableViewDataSourceP", "pickPicture"]
 - !private ["So21UITableViewDataSourceP", "present"]
-- !private ["So21UITableViewDataSourceP", "print"]
 - ["So21UITableViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDragging"]
@@ -1613,7 +1560,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "performSegue"]
 - !private ["So19UITableViewDelegateP", "pickPicture"]
 - !private ["So19UITableViewDelegateP", "present"]
-- !private ["So19UITableViewDelegateP", "print"]
 - ["So19UITableViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDragging"]
@@ -1664,7 +1610,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - !private ["So18UITraitEnvironmentP", "pickPicture"]
 - !private ["So18UITraitEnvironmentP", "present"]
-- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "puzzle"]
 - !private ["So18UITraitEnvironmentP", "puzzleImage"]
 - !private ["So18UITraitEnvironmentP", "puzzleNameLabel"]
@@ -1686,7 +1631,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "sectionIndexTitles"]
 - ["So18UITraitEnvironmentP", "sectionIndexTitlesForTableView"]
 - !private ["So18UITraitEnvironmentP", "selectedImageIndex"]
-- !private ["So18UITraitEnvironmentP", "selectedSegmentIndex"]
 - !private ["So18UITraitEnvironmentP", "sourceType"]
 - ["So18UITraitEnvironmentP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "text"]
@@ -1724,7 +1668,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "performSegue"]
 - !private ["So23UIUserActivityRestoringP", "pickPicture"]
 - !private ["So23UIUserActivityRestoringP", "present"]
-- !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "puzzle"]
 - !private ["So23UIUserActivityRestoringP", "puzzleImage"]
 - !private ["So23UIUserActivityRestoringP", "puzzleNameLabel"]
@@ -1746,7 +1689,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "sectionIndexTitles"]
 - ["So23UIUserActivityRestoringP", "sectionIndexTitlesForTableView"]
 - !private ["So23UIUserActivityRestoringP", "selectedImageIndex"]
-- !private ["So23UIUserActivityRestoringP", "selectedSegmentIndex"]
 - !private ["So23UIUserActivityRestoringP", "sourceType"]
 - ["So23UIUserActivityRestoringP", "tableView"]
 - !private ["So23UIUserActivityRestoringP", "text"]
@@ -1761,7 +1703,6 @@ depends-member:
 - !private ["So6UIViewC", "puzzleNameLabel"]
 - !private ["So6UIViewC", "register"]
 - !private ["So6UIViewC", "reloadData"]
-- !private ["So6UIViewC", "selectedSegmentIndex"]
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "CGRect"]
 - !private ["So16UIViewControllerC", "Double"]
@@ -1772,7 +1713,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "Puzzle"]
 - ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UIImagePickerController"]
-- ["So16UIViewControllerC", "UISegmentedControl"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
@@ -1799,7 +1739,6 @@ depends-member:
 - ["So16UIViewControllerC", "pickPicture"]
 - ["So16UIViewControllerC", "prepare"]
 - !private ["So16UIViewControllerC", "present"]
-- !private ["So16UIViewControllerC", "print"]
 - !private ["So16UIViewControllerC", "puzzle"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
@@ -1816,7 +1755,6 @@ depends-member:
 - ["So16UIViewControllerC", "scrollViewWillEndDragging"]
 - ["So16UIViewControllerC", "sectionIndexTitles"]
 - ["So16UIViewControllerC", "sectionIndexTitlesForTableView"]
-- ["So16UIViewControllerC", "selectPicture"]
 - ["So16UIViewControllerC", "selectedImage"]
 - ["So16UIViewControllerC", "selectedImageIndex"]
 - !private ["So16UIViewControllerC", "sourceType"]
@@ -1835,7 +1773,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "puzzleNameLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "register"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "selectedSegmentIndex"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
@@ -1895,7 +1832,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pickPicture"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "puzzle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "puzzleImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "puzzleNameLabel"]
@@ -1917,7 +1853,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitles"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "sectionIndexTitlesForTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedImageIndex"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedSegmentIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sourceType"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
@@ -2017,7 +1952,6 @@ depends-nominal:
 - "So21UIAppearanceContainerP"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
-- !private "So9UIControlC"
 - !private "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
 - !private "So13UIDynamicItemP"
@@ -2039,7 +1973,6 @@ depends-nominal:
 - "So30UIResponderStandardEditActionsP"
 - !private "So12UIScrollViewC"
 - "So20UIScrollViewDelegateP"
-- !private "So18UISegmentedControlC"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - !private "So17UIStoryboardSegueC"
@@ -2082,6 +2015,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
@@ -2097,5 +2031,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e90a8e6882f818f742bb722c62a9e91a"
+interface-hash: "9f0cf9d4f7f74ba32cd1918b7c24219c"

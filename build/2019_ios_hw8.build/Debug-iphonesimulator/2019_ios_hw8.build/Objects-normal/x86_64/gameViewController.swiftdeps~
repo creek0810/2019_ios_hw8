@@ -14,8 +14,8 @@ provides-dynamic-lookup:
 - "prepare"
 - "puzzleImage"
 - "returnMenu"
-- "testFinish"
 - "timeLabel"
+- "titleItem"
 - "viewDidLoad"
 depends-top-level:
 - !private "%"
@@ -53,6 +53,7 @@ depends-top-level:
 - "UIImageView"
 - !private "UIKeyboardType"
 - "UILabel"
+- "UINavigationItem"
 - "UIStoryboardSegue"
 - "UIView"
 - "UIViewController"
@@ -164,6 +165,7 @@ depends-member:
 - !private ["s7CVarArgP", "timeLabel"]
 - !private ["s7CVarArgP", "timer"]
 - !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "titleItem"]
 - !private ["s7CVarArgP", "updateImage"]
 - !private ["s7CVarArgP", "updateUI"]
 - !private ["s7CVarArgP", "url"]
@@ -249,6 +251,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "timeLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "timer"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "titleItem"]
 - !private ["s28CustomDebugStringConvertibleP", "updateImage"]
 - !private ["s28CustomDebugStringConvertibleP", "updateUI"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
@@ -266,6 +269,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "isEnabled"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
+- !private ["s17CustomReflectableP", "title"]
 - !private ["s23CustomStringConvertibleP", "AudioServicesCreateSystemSoundID"]
 - !private ["s23CustomStringConvertibleP", "AudioServicesPlaySystemSound"]
 - !private ["s23CustomStringConvertibleP", "Bundle"]
@@ -339,6 +343,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "timeLabel"]
 - !private ["s23CustomStringConvertibleP", "timer"]
 - !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "titleItem"]
 - !private ["s23CustomStringConvertibleP", "updateImage"]
 - !private ["s23CustomStringConvertibleP", "updateUI"]
 - !private ["s23CustomStringConvertibleP", "url"]
@@ -355,6 +360,7 @@ depends-member:
 - !private ["Se", "init"]
 - !private ["Se", "subscript"]
 - !private ["Se", "text"]
+- !private ["Se", "title"]
 - !private ["So18OS_dispatch_objectC", "async"]
 - !private ["So18OS_dispatch_objectC", "main"]
 - !private ["So17OS_dispatch_queueC", "async"]
@@ -367,6 +373,7 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "subscript"]
 - !private ["SE", "text"]
+- !private ["SE", "title"]
 - !private ["SQ", "AudioServicesCreateSystemSoundID"]
 - !private ["SQ", "AudioServicesPlaySystemSound"]
 - !private ["SQ", "Bundle"]
@@ -443,6 +450,7 @@ depends-member:
 - !private ["SQ", "timeLabel"]
 - !private ["SQ", "timer"]
 - !private ["SQ", "title"]
+- !private ["SQ", "titleItem"]
 - !private ["SQ", "updateImage"]
 - !private ["SQ", "updateUI"]
 - !private ["SQ", "url"]
@@ -459,6 +467,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s23ExpressibleByNilLiteralP", "title"]
 - !private ["s26ExpressibleByStringLiteralP", "components"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
@@ -545,6 +554,7 @@ depends-member:
 - !private ["SH", "timeLabel"]
 - !private ["SH", "timer"]
 - !private ["SH", "title"]
+- !private ["SH", "titleItem"]
 - !private ["SH", "updateImage"]
 - !private ["SH", "updateUI"]
 - !private ["SH", "url"]
@@ -619,6 +629,7 @@ depends-member:
 - !private ["So8NSCodingP", "timeLabel"]
 - !private ["So8NSCodingP", "timer"]
 - !private ["So8NSCodingP", "title"]
+- !private ["So8NSCodingP", "titleItem"]
 - !private ["So8NSCodingP", "updateImage"]
 - !private ["So8NSCodingP", "updateUI"]
 - !private ["So8NSCodingP", "viewDidLoad"]
@@ -677,6 +688,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "textFields"]
 - !private ["So26NSExtensionRequestHandlingP", "timeLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "timer"]
+- !private ["So26NSExtensionRequestHandlingP", "titleItem"]
 - !private ["So26NSExtensionRequestHandlingP", "updateImage"]
 - !private ["So26NSExtensionRequestHandlingP", "updateUI"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -712,6 +724,7 @@ depends-member:
 - ["So8NSObjectC", "UIImageView"]
 - !private ["So8NSObjectC", "UIKeyboardType"]
 - ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UINavigationItem"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
 - ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "UIViewPropertyAnimator"]
@@ -770,12 +783,12 @@ depends-member:
 - !private ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "string"]
 - !private ["So8NSObjectC", "subtitle"]
-- ["So8NSObjectC", "testFinish"]
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "textFields"]
 - ["So8NSObjectC", "timeLabel"]
 - ["So8NSObjectC", "timer"]
 - !private ["So8NSObjectC", "title"]
+- ["So8NSObjectC", "titleItem"]
 - ["So8NSObjectC", "updateImage"]
 - ["So8NSObjectC", "updateUI"]
 - !private ["So8NSObjectC", "url"]
@@ -851,6 +864,7 @@ depends-member:
 - !private ["So8NSObjectP", "timeLabel"]
 - !private ["So8NSObjectP", "timer"]
 - !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "titleItem"]
 - !private ["So8NSObjectP", "updateImage"]
 - !private ["So8NSObjectP", "updateUI"]
 - !private ["So8NSObjectP", "url"]
@@ -871,6 +885,7 @@ depends-member:
 - !private ["Sq", "image"]
 - !private ["Sq", "subscript"]
 - !private ["Sq", "text"]
+- !private ["Sq", "title"]
 - !private ["12_019_ios_hw86PuzzleV", "image"]
 - !private ["12_019_ios_hw86PuzzleV", "move"]
 - !private ["12_019_ios_hw86PuzzleV", "name"]
@@ -989,6 +1004,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textFields"]
 - !private ["So21UIAppearanceContainerP", "timeLabel"]
 - !private ["So21UIAppearanceContainerP", "timer"]
+- !private ["So21UIAppearanceContainerP", "titleItem"]
 - !private ["So21UIAppearanceContainerP", "updateImage"]
 - !private ["So21UIAppearanceContainerP", "updateUI"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
@@ -1037,6 +1053,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "textFields"]
 - !private ["So18UIContentContainerP", "timeLabel"]
 - !private ["So18UIContentContainerP", "timer"]
+- !private ["So18UIContentContainerP", "titleItem"]
 - !private ["So18UIContentContainerP", "updateImage"]
 - !private ["So18UIContentContainerP", "updateUI"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -1109,6 +1126,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "textFields"]
 - !private ["So18UIFocusEnvironmentP", "timeLabel"]
 - !private ["So18UIFocusEnvironmentP", "timer"]
+- !private ["So18UIFocusEnvironmentP", "titleItem"]
 - !private ["So18UIFocusEnvironmentP", "updateImage"]
 - !private ["So18UIFocusEnvironmentP", "updateUI"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
@@ -1133,6 +1151,7 @@ depends-member:
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So14UIKeyboardTypeV", "alphabet"]
 - !private ["So7UILabelC", "text"]
+- !private ["So16UINavigationItemC", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "AudioServicesCreateSystemSoundID"]
 - !private ["So30UIPasteConfigurationSupportingP", "AudioServicesPlaySystemSound"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
@@ -1183,6 +1202,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textFields"]
 - !private ["So30UIPasteConfigurationSupportingP", "timeLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "timer"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateUI"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
@@ -1207,6 +1227,7 @@ depends-member:
 - ["So11UIResponderC", "UIImageView"]
 - !private ["So11UIResponderC", "UIKeyboardType"]
 - ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UINavigationItem"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
 - ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "UIViewPropertyAnimator"]
@@ -1245,11 +1266,11 @@ depends-member:
 - !private ["So11UIResponderC", "record"]
 - ["So11UIResponderC", "returnMenu"]
 - ["So11UIResponderC", "sendNotification"]
-- ["So11UIResponderC", "testFinish"]
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "textFields"]
 - ["So11UIResponderC", "timeLabel"]
 - ["So11UIResponderC", "timer"]
+- ["So11UIResponderC", "titleItem"]
 - ["So11UIResponderC", "updateImage"]
 - ["So11UIResponderC", "updateUI"]
 - ["So11UIResponderC", "viewDidLoad"]
@@ -1303,6 +1324,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textFields"]
 - !private ["So30UIResponderStandardEditActionsP", "timeLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "timer"]
+- !private ["So30UIResponderStandardEditActionsP", "titleItem"]
 - !private ["So30UIResponderStandardEditActionsP", "updateImage"]
 - !private ["So30UIResponderStandardEditActionsP", "updateUI"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
@@ -1356,6 +1378,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "textFields"]
 - !private ["So16UIStateRestoringP", "timeLabel"]
 - !private ["So16UIStateRestoringP", "timer"]
+- !private ["So16UIStateRestoringP", "titleItem"]
 - !private ["So16UIStateRestoringP", "updateImage"]
 - !private ["So16UIStateRestoringP", "updateUI"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -1430,6 +1453,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textFields"]
 - !private ["So18UITraitEnvironmentP", "timeLabel"]
 - !private ["So18UITraitEnvironmentP", "timer"]
+- !private ["So18UITraitEnvironmentP", "titleItem"]
 - !private ["So18UITraitEnvironmentP", "updateImage"]
 - !private ["So18UITraitEnvironmentP", "updateUI"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
@@ -1483,6 +1507,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "textFields"]
 - !private ["So23UIUserActivityRestoringP", "timeLabel"]
 - !private ["So23UIUserActivityRestoringP", "timer"]
+- !private ["So23UIUserActivityRestoringP", "titleItem"]
 - !private ["So23UIUserActivityRestoringP", "updateImage"]
 - !private ["So23UIUserActivityRestoringP", "updateUI"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
@@ -1514,6 +1539,7 @@ depends-member:
 - ["So16UIViewControllerC", "UIImageView"]
 - !private ["So16UIViewControllerC", "UIKeyboardType"]
 - ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UINavigationItem"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
 - ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "UIViewPropertyAnimator"]
@@ -1548,10 +1574,10 @@ depends-member:
 - !private ["So16UIViewControllerC", "record"]
 - ["So16UIViewControllerC", "returnMenu"]
 - ["So16UIViewControllerC", "sendNotification"]
-- ["So16UIViewControllerC", "testFinish"]
 - !private ["So16UIViewControllerC", "textFields"]
 - ["So16UIViewControllerC", "timeLabel"]
 - ["So16UIViewControllerC", "timer"]
+- ["So16UIViewControllerC", "titleItem"]
 - ["So16UIViewControllerC", "updateImage"]
 - ["So16UIViewControllerC", "updateUI"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1681,6 +1707,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateUI"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
@@ -1693,6 +1720,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "title"]
 - !private ["s16_SwiftStringViewP", "components"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
@@ -1717,6 +1745,7 @@ depends-member:
 - ["12_019_ios_hw818gameViewControllerC", "UIImageView"]
 - !private ["12_019_ios_hw818gameViewControllerC", "UIKeyboardType"]
 - ["12_019_ios_hw818gameViewControllerC", "UILabel"]
+- ["12_019_ios_hw818gameViewControllerC", "UINavigationItem"]
 - ["12_019_ios_hw818gameViewControllerC", "UIStoryboardSegue"]
 - ["12_019_ios_hw818gameViewControllerC", "UIView"]
 - !private ["12_019_ios_hw818gameViewControllerC", "UIViewPropertyAnimator"]
@@ -1746,9 +1775,9 @@ depends-member:
 - !private ["12_019_ios_hw818gameViewControllerC", "record"]
 - ["12_019_ios_hw818gameViewControllerC", "returnMenu"]
 - ["12_019_ios_hw818gameViewControllerC", "sendNotification"]
-- ["12_019_ios_hw818gameViewControllerC", "testFinish"]
 - ["12_019_ios_hw818gameViewControllerC", "timeLabel"]
 - ["12_019_ios_hw818gameViewControllerC", "timer"]
+- ["12_019_ios_hw818gameViewControllerC", "titleItem"]
 - ["12_019_ios_hw818gameViewControllerC", "updateImage"]
 - ["12_019_ios_hw818gameViewControllerC", "updateUI"]
 - ["12_019_ios_hw818gameViewControllerC", "viewDidLoad"]
@@ -1842,6 +1871,7 @@ depends-nominal:
 - !private "So10UIKeyInputP"
 - !private "So14UIKeyboardTypeV"
 - !private "So7UILabelC"
+- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -1918,4 +1948,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cf399bd1d789c4e9869b75660398c10e"
+interface-hash: "db54bc30487ea7ac8562fb91d0fbdbae"

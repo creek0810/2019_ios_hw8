@@ -216,7 +216,6 @@ SWIFT_CLASS("_TtC12_019_ios_hw817MenuTableViewCell")
 @end
 
 @class UITableView;
-@class UISegmentedControl;
 @class UIImagePickerController;
 @class UIStoryboardSegue;
 @class NSBundle;
@@ -224,7 +223,6 @@ SWIFT_CLASS("_TtC12_019_ios_hw817MenuTableViewCell")
 SWIFT_CLASS("_TtC12_019_ios_hw818MenuViewController")
 @interface MenuViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified menuTable;
-- (IBAction)selectPicture:(UISegmentedControl * _Nonnull)sender;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
@@ -247,6 +245,7 @@ SWIFT_CLASS("_TtC12_019_ios_hw823ScoreBoardTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UISegmentedControl;
 
 SWIFT_CLASS("_TtC12_019_ios_hw824ScoreBoardViewController")
 @interface ScoreBoardViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -285,16 +284,17 @@ SWIFT_CLASS("_TtC12_019_ios_hw823WallpaperViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UINavigationItem;
 @class UIView;
 
 SWIFT_CLASS("_TtC12_019_ios_hw818gameViewController")
 @interface gameViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified titleItem;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified maskView;
 @property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified btnCollection;
 @property (nonatomic, copy) IBOutletCollection(UIImageView) NSArray<UIImageView *> * _Null_unspecified puzzleImage;
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified timeLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified finishImage;
-- (IBAction)testFinish:(id _Nonnull)sender;
 - (IBAction)returnMenu:(id _Nonnull)sender;
 - (IBAction)btnPressed:(UIButton * _Nonnull)sender;
 - (IBAction)gameStart:(UIButton * _Nonnull)sender;

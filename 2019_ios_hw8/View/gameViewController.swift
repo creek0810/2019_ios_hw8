@@ -23,19 +23,6 @@ class gameViewController: UIViewController {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet weak var finishImage: UIImageView!
     
-    @IBAction func testFinish(_ sender: Any) {
-        //let fileURL = NSURL(string: "clap.mp3")
-        //var theSoundID: SystemSoundID = 0
-        
-        
-        //AudioServicesCreateSystemSoundID(fileURL!, &theSoundID)
-        
-        //AudioServicesPlaySystemSound(theSoundID)
-        
-        
-        firstFinish()
-       
-    }
     @IBAction func returnMenu(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -90,9 +77,16 @@ class gameViewController: UIViewController {
         let token = puzzle?.name.components(separatedBy: " ")
         if let token = token {
             let ID = Int(token[1])!
-            print("wallpaper\(ID)")
+            // establish finishImage
             self.finishImage.image = UIImage(named: "wallpaper\(ID)")
             self.finishImage.alpha = 0
+            // play the clap soundtrack
+            if let soundURL = Bundle.main.url(forResource: "win", withExtension: "wav") {
+                var mySound: SystemSoundID = 0
+                AudioServicesCreateSystemSoundID(soundURL as CFURL, &mySound)
+                AudioServicesPlaySystemSound(mySound);
+            }
+            // show new wallpaper
             UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 3, delay: 1, animations: {
                 self.maskView.alpha = 1
                 self.finishImage.alpha = 1
@@ -137,8 +131,6 @@ class gameViewController: UIViewController {
             }
         }
         controller.addAction(okAction)
-        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
-        controller.addAction(cancelAction)
         present(controller, animated: true, completion: nil)
     }
     

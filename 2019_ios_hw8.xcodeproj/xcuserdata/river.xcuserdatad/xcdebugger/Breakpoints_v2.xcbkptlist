@@ -159,38 +159,6 @@
             endingLineNumber = "40"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_019_ios_hw8.MenuViewController.imagePickerController(_: __C.UIImagePickerController, didFinishPickingMediaWithInfo: Swift.Dictionary&lt;__C.UIImagePickerControllerInfoKey, Any&gt;) -&gt; ()"
-                  moduleName = "2019_ios_hw8"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift"
-                  timestampString = "578943019.07092"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "478">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in _019_ios_hw8.MenuViewController.imagePickerController(_: __C.UIImagePickerController, didFinishPickingMediaWithInfo: Swift.Dictionary&lt;__C.UIImagePickerControllerInfoKey, Any&gt;) -&gt; ()"
-                  moduleName = "2019_ios_hw8"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/View/MenuViewController.swift"
-                  timestampString = "578943019.072762"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -248,7 +216,7 @@
                   moduleName = "2019_ios_hw8"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift"
-                  timestampString = "578943019.08365"
+                  timestampString = "579026978.917799"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -263,7 +231,7 @@
                   moduleName = "2019_ios_hw8"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/river/Desktop/2019_ios_hw8/2019_ios_hw8/Controller/NetworkController.swift"
-                  timestampString = "578943019.0855"
+                  timestampString = "579026978.920716"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -376,11 +344,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2019_ios_hw8/View/gameViewController.swift"
-            timestampString = "578943018.902051"
+            timestampString = "579026978.724413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "updateUI()"
             landmarkType = "7">
          </BreakpointContent>
@@ -392,11 +360,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "2019_ios_hw8/View/gameViewController.swift"
-            timestampString = "578943018.9024611"
+            timestampString = "579026978.724921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "updateUI()"
             landmarkType = "7">
          </BreakpointContent>
