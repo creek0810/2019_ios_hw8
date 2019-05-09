@@ -9,12 +9,16 @@
 import UIKit
 import UserNotifications
 import AudioToolbox
+import AVFoundation
+
 
 class gameViewController: UIViewController {
     
     var puzzle: Puzzle?
     var timer: Timer?
     var count: Int = 0
+    var audioPlayer: AVAudioPlayer!
+
     
     @IBOutlet weak var titleItem: UINavigationItem!
     @IBOutlet weak var maskView: UIView!
@@ -39,6 +43,7 @@ class gameViewController: UIViewController {
         }
         if let isFinish = isFinish, let timer = timer {
             if isFinish {
+                audioPlayer.pause()
                 timer.invalidate()
                 
                 let defaultFinishPuzzle = [puzzle?.name ?? "": false]
@@ -181,6 +186,18 @@ class gameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        // play background music
+        
+        let url = Bundle.main.url(forResource: "bgm", withExtension: "mp3")
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url!)
+            audioPlayer.numberOfLoops = -1
+
+            audioPlayer.prepareToPlay()
+        } catch {
+            print("Error:", error.localizedDescription)
+        }
+        audioPlayer.play()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -72,6 +72,10 @@
 		<data>
 		nf7YLCIr5juhY/ZJtwmKQkwUs0Q=
 		</data>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		C8/fSejspJmoReIlvx0gMYU1zPA=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		2Yts+UWi56dZQV4okf99Hj0F0Bw=
@@ -91,6 +95,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		QdTafA6AyUkZoAdHsEpdWR2Rybw=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		guBMkGdQjZsXUMLZ2RiF5seH+uI=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -128,6 +136,10 @@
 		<data>
 		mUw78ayF0ZMKxZXLbpo/aVHqQ6A=
 		</data>
+		<key>Frameworks/libswiftsimd.dylib</key>
+		<data>
+		EsuWYBm9SkY2GWWg4pg0R3pr6IU=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		n08D+XJOYmUfncxH+97dGInaTTY=
@@ -135,6 +147,10 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>bgm.mp3</key>
+		<data>
+		/EpAQGvOaUjtpmJkxR7wAQAebu8=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -266,6 +282,13 @@
 			KR+z7aptoxD1QAQm+ofVHvO0Bk2p+Y8iTEbNxuJHbOU=
 			</data>
 		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JuIm+C0yB9rfGK4oJiqbFAzSXLFlH2vqXaxVdl8dUhQ=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>hash2</key>
@@ -299,6 +322,13 @@
 			<key>hash2</key>
 			<data>
 			+qF3adIf17jUiv8NYXv5nwykrRBZgmnlBZu7+7FdEVc=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JIXRI2G2CdwPe/qQ6YN2FMGkvaOrTvVkmC4f77dBG9E=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
@@ -362,6 +392,20 @@
 			<key>hash2</key>
 			<data>
 			EFpaiyfJXaJ3aaulKQ7mrmPLuqXG8IqYFe0E9uygyzU=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftsimd.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HBwX3SzbF4tygh2q9oYITKe02e2eVHnHTc2QB/1CV+U=
+			</data>
+		</dict>
+		<key>bgm.mp3</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			K5e/vJF2sIef6wZ9ae+not+OZr75CT7ixmIAe0FxXMA=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
