@@ -25,6 +25,7 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Double"
 - "FloatLiteralType"
+- !private "GameViewController"
 - "IndexPath"
 - "Int"
 - "IntegerLiteralType"
@@ -44,7 +45,6 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIViewController"
 - !private "fatalError"
-- !private "gameViewController"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -433,6 +433,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SF", "init"]
+- !private ["12_019_ios_hw818GameViewControllerC", "puzzle"]
 - !private ["SH", "CGRect"]
 - !private ["SH", "Double"]
 - ["SH", "InfoKey"]
@@ -512,6 +513,7 @@ depends-member:
 - !private ["12_019_ios_hw817MenuTableViewCellC", "puzzleNameLabel"]
 - !private ["12_019_ios_hw818MenuViewControllerC", "CGRect"]
 - !private ["12_019_ios_hw818MenuViewControllerC", "Double"]
+- !private ["12_019_ios_hw818MenuViewControllerC", "GameViewController"]
 - ["12_019_ios_hw818MenuViewControllerC", "IndexPath"]
 - ["12_019_ios_hw818MenuViewControllerC", "Int"]
 - !private ["12_019_ios_hw818MenuViewControllerC", "MenuTableViewCell"]
@@ -526,7 +528,6 @@ depends-member:
 - ["12_019_ios_hw818MenuViewControllerC", "deinit"]
 - !private ["12_019_ios_hw818MenuViewControllerC", "dismiss"]
 - !private ["12_019_ios_hw818MenuViewControllerC", "fatalError"]
-- !private ["12_019_ios_hw818MenuViewControllerC", "gameViewController"]
 - ["12_019_ios_hw818MenuViewControllerC", "imagePickerController"]
 - ["12_019_ios_hw818MenuViewControllerC", "imagePickerControllerDidCancel"]
 - ["12_019_ios_hw818MenuViewControllerC", "indexPathForPreferredFocusedView"]
@@ -688,6 +689,7 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "size"]
 - !private ["So8NSObjectC", "CGRect"]
 - !private ["So8NSObjectC", "Double"]
+- !private ["So8NSObjectC", "GameViewController"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "InfoKey"]
 - ["So8NSObjectC", "Int"]
@@ -707,7 +709,6 @@ depends-member:
 - !private ["So8NSObjectC", "destination"]
 - !private ["So8NSObjectC", "dismiss"]
 - !private ["So8NSObjectC", "fatalError"]
-- !private ["So8NSObjectC", "gameViewController"]
 - !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imagePickerController"]
 - ["So8NSObjectC", "imagePickerControllerDidCancel"]
@@ -1261,6 +1262,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So11UIResponderC", "CGRect"]
 - !private ["So11UIResponderC", "Double"]
+- !private ["So11UIResponderC", "GameViewController"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "InfoKey"]
 - ["So11UIResponderC", "Int"]
@@ -1278,7 +1280,6 @@ depends-member:
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "fatalError"]
-- !private ["So11UIResponderC", "gameViewController"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imagePickerController"]
 - ["So11UIResponderC", "imagePickerControllerDidCancel"]
@@ -1706,6 +1707,7 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - !private ["So16UIViewControllerC", "CGRect"]
 - !private ["So16UIViewControllerC", "Double"]
+- !private ["So16UIViewControllerC", "GameViewController"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "InfoKey"]
 - ["So16UIViewControllerC", "Int"]
@@ -1722,7 +1724,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "delegate"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - !private ["So16UIViewControllerC", "fatalError"]
-- !private ["So16UIViewControllerC", "gameViewController"]
 - ["So16UIViewControllerC", "imagePickerController"]
 - ["So16UIViewControllerC", "imagePickerControllerDidCancel"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
@@ -1879,7 +1880,6 @@ depends-member:
 - !private ["s20_SwiftNewtypeWrapperP", "originalImage"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
-- !private ["12_019_ios_hw818gameViewControllerC", "puzzle"]
 depends-nominal:
 - "Sa"
 - "s13ArrayProtocolP"
@@ -1912,6 +1912,7 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SF"
+- !private "12_019_ios_hw818GameViewControllerC"
 - "SH"
 - !private "SD5IndexV"
 - !private "10Foundation9IndexPathV"
@@ -2003,7 +2004,6 @@ depends-nominal:
 - "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
-- !private "12_019_ios_hw818gameViewControllerC"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"

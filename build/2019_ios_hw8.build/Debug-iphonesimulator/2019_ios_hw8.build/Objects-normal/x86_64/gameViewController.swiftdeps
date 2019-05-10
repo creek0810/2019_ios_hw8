@@ -1,10 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "gameViewController"
+- "GameViewController"
 provides-nominal:
-- "12_019_ios_hw818gameViewControllerC"
+- "12_019_ios_hw818GameViewControllerC"
 provides-member:
-- ["12_019_ios_hw818gameViewControllerC", ""]
+- ["12_019_ios_hw818GameViewControllerC", ""]
 provides-dynamic-lookup:
 - "btnCollection"
 - "btnPressed"
@@ -39,6 +39,7 @@ depends-top-level:
 - !private "Dictionary"
 - !private "DispatchQueue"
 - "FloatLiteralType"
+- "GameViewController"
 - "Int"
 - "IntegerLiteralType"
 - "Puzzle"
@@ -66,7 +67,6 @@ depends-top-level:
 - !private "UNUserNotificationCenter"
 - "UnicodeScalarType"
 - !private "UserDefaults"
-- "gameViewController"
 - !private "print"
 - !private "record"
 depends-member:
@@ -524,6 +524,65 @@ depends-member:
 - !private ["So11NSFormatterC", "dateFormat"]
 - !private ["So11NSFormatterC", "init"]
 - !private ["So11NSFormatterC", "string"]
+- ["12_019_ios_hw818GameViewControllerC", "AVAudioPlayer"]
+- !private ["12_019_ios_hw818GameViewControllerC", "AudioServicesCreateSystemSoundID"]
+- !private ["12_019_ios_hw818GameViewControllerC", "AudioServicesPlaySystemSound"]
+- !private ["12_019_ios_hw818GameViewControllerC", "Bool"]
+- !private ["12_019_ios_hw818GameViewControllerC", "Bundle"]
+- !private ["12_019_ios_hw818GameViewControllerC", "CFURL"]
+- !private ["12_019_ios_hw818GameViewControllerC", "Date"]
+- !private ["12_019_ios_hw818GameViewControllerC", "DateFormatter"]
+- !private ["12_019_ios_hw818GameViewControllerC", "DispatchQueue"]
+- ["12_019_ios_hw818GameViewControllerC", "Int"]
+- ["12_019_ios_hw818GameViewControllerC", "Puzzle"]
+- !private ["12_019_ios_hw818GameViewControllerC", "ScoreBoardViewController"]
+- !private ["12_019_ios_hw818GameViewControllerC", "String"]
+- !private ["12_019_ios_hw818GameViewControllerC", "SystemSoundID"]
+- ["12_019_ios_hw818GameViewControllerC", "Timer"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UIAlertAction"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UIAlertController"]
+- ["12_019_ios_hw818GameViewControllerC", "UIButton"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UIImage"]
+- ["12_019_ios_hw818GameViewControllerC", "UIImageView"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UIKeyboardType"]
+- ["12_019_ios_hw818GameViewControllerC", "UILabel"]
+- ["12_019_ios_hw818GameViewControllerC", "UINavigationItem"]
+- ["12_019_ios_hw818GameViewControllerC", "UIStoryboardSegue"]
+- ["12_019_ios_hw818GameViewControllerC", "UIView"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UIViewPropertyAnimator"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UNMutableNotificationContent"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UNNotificationRequest"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UNNotificationSound"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UNTimeIntervalNotificationTrigger"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UNUserNotificationCenter"]
+- !private ["12_019_ios_hw818GameViewControllerC", "UserDefaults"]
+- ["12_019_ios_hw818GameViewControllerC", "audioPlayer"]
+- ["12_019_ios_hw818GameViewControllerC", "btnCollection"]
+- ["12_019_ios_hw818GameViewControllerC", "btnPressed"]
+- ["12_019_ios_hw818GameViewControllerC", "count"]
+- ["12_019_ios_hw818GameViewControllerC", "disablBtn"]
+- !private ["12_019_ios_hw818GameViewControllerC", "dismiss"]
+- ["12_019_ios_hw818GameViewControllerC", "finishImage"]
+- ["12_019_ios_hw818GameViewControllerC", "firstFinish"]
+- ["12_019_ios_hw818GameViewControllerC", "gameStart"]
+- ["12_019_ios_hw818GameViewControllerC", "getUserName"]
+- ["12_019_ios_hw818GameViewControllerC", "init"]
+- ["12_019_ios_hw818GameViewControllerC", "maskView"]
+- !private ["12_019_ios_hw818GameViewControllerC", "performSegue"]
+- ["12_019_ios_hw818GameViewControllerC", "prepare"]
+- !private ["12_019_ios_hw818GameViewControllerC", "present"]
+- !private ["12_019_ios_hw818GameViewControllerC", "print"]
+- ["12_019_ios_hw818GameViewControllerC", "puzzle"]
+- ["12_019_ios_hw818GameViewControllerC", "puzzleImage"]
+- !private ["12_019_ios_hw818GameViewControllerC", "record"]
+- ["12_019_ios_hw818GameViewControllerC", "returnMenu"]
+- ["12_019_ios_hw818GameViewControllerC", "sendNotification"]
+- ["12_019_ios_hw818GameViewControllerC", "timeLabel"]
+- ["12_019_ios_hw818GameViewControllerC", "timer"]
+- ["12_019_ios_hw818GameViewControllerC", "titleItem"]
+- ["12_019_ios_hw818GameViewControllerC", "updateImage"]
+- ["12_019_ios_hw818GameViewControllerC", "updateUI"]
+- ["12_019_ios_hw818GameViewControllerC", "viewDidLoad"]
 - !private ["SH", "AVAudioPlayer"]
 - !private ["SH", "AudioServicesCreateSystemSoundID"]
 - !private ["SH", "AudioServicesPlaySystemSound"]
@@ -1823,65 +1882,6 @@ depends-member:
 - !private ["s16_SwiftStringViewP", "components"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
-- ["12_019_ios_hw818gameViewControllerC", "AVAudioPlayer"]
-- !private ["12_019_ios_hw818gameViewControllerC", "AudioServicesCreateSystemSoundID"]
-- !private ["12_019_ios_hw818gameViewControllerC", "AudioServicesPlaySystemSound"]
-- !private ["12_019_ios_hw818gameViewControllerC", "Bool"]
-- !private ["12_019_ios_hw818gameViewControllerC", "Bundle"]
-- !private ["12_019_ios_hw818gameViewControllerC", "CFURL"]
-- !private ["12_019_ios_hw818gameViewControllerC", "Date"]
-- !private ["12_019_ios_hw818gameViewControllerC", "DateFormatter"]
-- !private ["12_019_ios_hw818gameViewControllerC", "DispatchQueue"]
-- ["12_019_ios_hw818gameViewControllerC", "Int"]
-- ["12_019_ios_hw818gameViewControllerC", "Puzzle"]
-- !private ["12_019_ios_hw818gameViewControllerC", "ScoreBoardViewController"]
-- !private ["12_019_ios_hw818gameViewControllerC", "String"]
-- !private ["12_019_ios_hw818gameViewControllerC", "SystemSoundID"]
-- ["12_019_ios_hw818gameViewControllerC", "Timer"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UIAlertAction"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UIAlertController"]
-- ["12_019_ios_hw818gameViewControllerC", "UIButton"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UIImage"]
-- ["12_019_ios_hw818gameViewControllerC", "UIImageView"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UIKeyboardType"]
-- ["12_019_ios_hw818gameViewControllerC", "UILabel"]
-- ["12_019_ios_hw818gameViewControllerC", "UINavigationItem"]
-- ["12_019_ios_hw818gameViewControllerC", "UIStoryboardSegue"]
-- ["12_019_ios_hw818gameViewControllerC", "UIView"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UIViewPropertyAnimator"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UNMutableNotificationContent"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UNNotificationRequest"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UNNotificationSound"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UNTimeIntervalNotificationTrigger"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UNUserNotificationCenter"]
-- !private ["12_019_ios_hw818gameViewControllerC", "UserDefaults"]
-- ["12_019_ios_hw818gameViewControllerC", "audioPlayer"]
-- ["12_019_ios_hw818gameViewControllerC", "btnCollection"]
-- ["12_019_ios_hw818gameViewControllerC", "btnPressed"]
-- ["12_019_ios_hw818gameViewControllerC", "count"]
-- ["12_019_ios_hw818gameViewControllerC", "disablBtn"]
-- !private ["12_019_ios_hw818gameViewControllerC", "dismiss"]
-- ["12_019_ios_hw818gameViewControllerC", "finishImage"]
-- ["12_019_ios_hw818gameViewControllerC", "firstFinish"]
-- ["12_019_ios_hw818gameViewControllerC", "gameStart"]
-- ["12_019_ios_hw818gameViewControllerC", "getUserName"]
-- ["12_019_ios_hw818gameViewControllerC", "init"]
-- ["12_019_ios_hw818gameViewControllerC", "maskView"]
-- !private ["12_019_ios_hw818gameViewControllerC", "performSegue"]
-- ["12_019_ios_hw818gameViewControllerC", "prepare"]
-- !private ["12_019_ios_hw818gameViewControllerC", "present"]
-- !private ["12_019_ios_hw818gameViewControllerC", "print"]
-- ["12_019_ios_hw818gameViewControllerC", "puzzle"]
-- ["12_019_ios_hw818gameViewControllerC", "puzzleImage"]
-- !private ["12_019_ios_hw818gameViewControllerC", "record"]
-- ["12_019_ios_hw818gameViewControllerC", "returnMenu"]
-- ["12_019_ios_hw818gameViewControllerC", "sendNotification"]
-- ["12_019_ios_hw818gameViewControllerC", "timeLabel"]
-- ["12_019_ios_hw818gameViewControllerC", "timer"]
-- ["12_019_ios_hw818gameViewControllerC", "titleItem"]
-- ["12_019_ios_hw818gameViewControllerC", "updateImage"]
-- ["12_019_ios_hw818gameViewControllerC", "updateUI"]
-- ["12_019_ios_hw818gameViewControllerC", "viewDidLoad"]
 - !private ["12_019_ios_hw86recordV", "deinit"]
 - !private ["12_019_ios_hw86recordV", "init"]
 depends-nominal:
@@ -1918,6 +1918,7 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - !private "So11NSFormatterC"
+- "12_019_ios_hw818GameViewControllerC"
 - "SH"
 - !private "Si"
 - !private "s25LosslessStringConvertibleP"
@@ -2020,7 +2021,6 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
-- "12_019_ios_hw818gameViewControllerC"
 - !private "12_019_ios_hw86recordV"
 depends-dynamic-lookup:
 depends-external:
@@ -2057,4 +2057,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "fb2c845a999319c820727883475ea5b8"
+interface-hash: "13292f4218e2dc25324c9dc1849548ef"

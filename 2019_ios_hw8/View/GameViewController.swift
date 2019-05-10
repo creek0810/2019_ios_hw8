@@ -12,7 +12,7 @@ import AudioToolbox
 import AVFoundation
 
 
-class gameViewController: UIViewController {
+class GameViewController: UIViewController {
     
     var puzzle: Puzzle?
     var timer: Timer?

@@ -94,7 +94,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let image = sender as! UIImage
         
-        let controller = segue.destination as! gameViewController
+        let controller = segue.destination as! GameViewController
         if selectedImageIndex == 0 {
             controller.puzzle = Puzzle(image: cutImage(originalImage: image), name: "personal")
             
